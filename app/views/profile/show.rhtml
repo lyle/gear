@@ -1,0 +1,23 @@
+
+<p>
+  <b>User :</b> <%=h @person.login %>
+</p>
+
+<p>
+  <b>Email :</b> <%=h @person.email %>
+</p>
+
+<% if (current_person.administrator? or current_person==@person) %>
+<%= link_to 'Edit', :action => 'edit', :id => @person %> 
+|
+<% end %>
+<%= link_to 'List', :action => 'list' %>
+
+<hr />
+
+<div id="youHave">
+	<h1><%=h @person.login %> Currently Has</h1>
+	<ul>
+	<%= render :partial => 'overview/have' , :collection => @person.active_transfers  %>	
+	</ul>
+</div>

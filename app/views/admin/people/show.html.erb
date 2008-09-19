@@ -1,0 +1,22 @@
+<div class="mainBlock">
+<p>
+  <b>Name:</b>
+  <%=h @person.display_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @person.email %>
+</p>
+
+<p>
+<b>Groups:</b> 
+<% for group in @person.groups %>
+<%= group.name%><%="," if group != @person.groups.last %>
+<%- end %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_person_path(@person) %> |
+<%= link_to 'Back', admin_people_path %>
+</div>

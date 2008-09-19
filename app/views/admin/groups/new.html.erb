@@ -1,0 +1,18 @@
+<div class="mainBlock">
+
+<h1>New group</h1>
+
+<% form_for(@group,  :url => {:controller => "admin/groups"}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', admin_groups_path %>
+</div>

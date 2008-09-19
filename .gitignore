@@ -1,0 +1,9 @@
+.DS_Store
+log/*.log
+tmp/**/*
+config/database.yml
+config/ldap.yml
+db/*.sqlite3
+db/from_filemaker/*
+vendor/plugins/*
+public/images/equipment/*

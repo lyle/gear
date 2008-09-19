@@ -1,0 +1,8 @@
+<% if @results.empty? %>
+  '<%=h @phrase %>' not found!
+<% else %>
+  <!--'<%=h @phrase %>' found <b><%= @number_match %></b> time(s)!-->
+   <table>
+<%= render :partial => 'item', :collection => @results, :locals => {:show_children=>false} %>
+</table>
+<% end %>

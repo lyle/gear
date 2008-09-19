@@ -1,0 +1,1964 @@
+<% i=0 %>
+DANMProjector2_420063:
+    id: <%= (i=i+1) %>
+    name: DANM Projector 2
+    description: InFocus X2 DLP Projector 1600 Lumens 800x600 resolution
+    inventory_identifier: 420063
+    manufacturer:
+    model:
+    serial_number: AMMC50602698
+    created_by: 1
+DANMProjector3_420064:
+    id: <%= (i=i+1) %>
+    name: DANM Projector 3
+    description: InFocus X2 DLP Projector 1600 Lumens 800x600 res
+    inventory_identifier: 420064
+    manufacturer: InFocus
+    model: X2
+    serial_number: AMMC533A0504
+    created_by: 1
+ShureSM63Microphone_420087:
+    id: <%= (i=i+1) %>
+    name: Shure SM63 Microphone
+    description: Short silver mic with white screen. With Remote control.
+    inventory_identifier: 420087
+    manufacturer: SHURE
+    model: SM63
+    serial_number: 
+    created_by: 1
+Marentz_420067:
+    id: <%= (i=i+1) %>
+    name: Marentz Solid State Recorder
+    description: with power adaptor and cord for power adaptor
+    inventory_identifier: 420067
+    manufacturer: MARANTZ
+    model: PMD660
+    serial_number: 20020527013130
+    created_by: 1
+BattCharger:
+    id: <%= (i=i+1) %>
+    name: Battery Charger and 4AAA
+    description: Rapid Charger
+    inventory_identifier: 
+    manufacturer: Power2000
+    model: XP-333
+    serial_number: 
+2GBCompactFlashCardReg_420069:
+    id: <%= (i=i+1) %>
+    name: 2GB Compact Flash Card/Reg
+    description:
+    inventory_identifier: 420069
+    manufacturer: SANDISK
+    model: SDCFB2048A10
+    serial_number: 
+1GBCompactFlashCardReg_420088:
+    id: <%= (i=i+1) %>
+    name: 1GB Compact Flash Card/Reg
+    description:
+    inventory_identifier: 420088
+    manufacturer: SANDISK
+    model: SDCFB1024A10
+    serial_number: 
+    created_by: 1
+MarentzSolidStateRecorder_420089:
+    id: <%= (i=i+1) %>
+    name: Marentz Solid State Recorder
+    description: with power adaptor and cord for power adaptor
+    inventory_identifier: 420089
+    manufacturer: MARANTZ
+    model: PMD660
+    serial_number: 20010516008716
+    created_by: 1
+StereoCONDENSERMICROPHONEREG_420098:
+    id: <%= (i=i+1) %>
+    name: Stereo CONDENSER MICROPHONE/REG
+    description: Portable Audio and DV Deck A stereo microphone with a AA battery.
+    inventory_identifier: 420098
+    manufacturer: AUDIO-TECHNICA
+    model: AT825
+    serial_number: 
+    created_by: 1
+MarentzSolidStateRecorder_420085:
+    id: <%= (i=i+1) %>
+    name: Marentz Solid State Recorder
+    description: with power adaptor and cord for power adaptor, microphone,  and box
+    inventory_identifier: 420085
+    manufacturer: MARANTZ
+    model: PMD660
+    serial_number: 20010516008717
+    created_by: 1
+SHURESM63OMNIDYNAMICMIC_420099:
+    id: <%= (i=i+1) %>
+    name: SHURE SM63 OMNI DYNAMIC MIC
+    description: Portable Audio and DVDeck Short silver mic with white screen.
+    inventory_identifier: 420099
+    manufacturer: SHURE
+    model: SM63
+    serial_number: 
+2GBCompactFlashCardReg_420097:
+    id: <%= (i=i+1) %>
+    name: 2GB Compact Flash Card/Reg
+    description:
+    inventory_identifier: 420097
+    manufacturer: SANDISK
+    model: SDCFB2048A10
+    serial_number: 
+    created_by: 1
+BatteryChargerand4AAA_420118:
+    id: <%= (i=i+1) %>
+    name: Battery Charger and 4AAA
+    description: "Rapid Charger Ni-Mh / NiCD Batteries Input: 110V/220V"
+    inventory_identifier: 420118
+    manufacturer: Power2000
+    model: XP-333
+    serial_number: 
+    created_by: 1
+G5Computer_420006:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420006
+    manufacturer: MAC
+    model:
+    serial_number: 
+    created_by: 1
+G5Computer_420007:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420007
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+MAudioFireWireSolo_420009:
+    id: <%= (i=i+1) %>
+    name: M-Audio FireWire Solo
+    description: Video and Audio Equipment Warburton
+    inventory_identifier: 420009
+    manufacturer: M-Audio
+    model: FireWire 410
+    serial_number: 
+    created_by: 1
+CinemaDisplay20inchWidescreen_420010:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420010
+    manufacturer: MAC
+    model:
+    serial_number: 
+    created_by: 1
+CinemaDisplay20inchWidescreen_420011:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420011
+    manufacturer: MAC
+    model:
+    serial_number: 
+17inchLCDSyncMaster_420012:
+    id: <%= (i=i+1) %>
+    name: 17" LCD SyncMaster
+    description: 710V Samsung 17" LCD SyncMaster 710V Monitors
+    inventory_identifier: 420012
+    manufacturer: Samsung
+    model:
+    serial_number: 
+17inchLCDSyncMaster_420013:
+    id: <%= (i=i+1) %>
+    name: 17" LCD SyncMaster
+    description: 710V Samsung 17" LCD SyncMaster 710V Monitors
+    inventory_identifier: 420013
+    manufacturer: Samsung
+    model:
+    serial_number: 
+    created_by: 1
+MotorMix_420014:
+    id: <%= (i=i+1) %>
+    name: Motor Mix
+    description:
+    inventory_identifier: 420014
+    manufacturer:
+    model:
+    serial_number: MM50142
+    created_by: 1
+ColorCCTV_420015:
+    id: <%= (i=i+1) %>
+    name: Color CCTV
+    description:
+    inventory_identifier: 420015
+    manufacturer: PANASONIC
+    model: WV-CP480
+    serial_number: EBA13738
+    created_by: 1
+ColorCCTV_420016:
+    id: <%= (i=i+1) %>
+    name: Color CCTV
+    description:
+    inventory_identifier: 420016
+    manufacturer: PANASONIC
+    model:
+    serial_number: EBA13737
+    created_by: 1
+Yamaha4busAudioMixer_420051:
+    id: <%= (i=i+1) %>
+    name: Yamaha 4 bus Audio Mixer
+    description: Video and Audio equipment Warburton
+    inventory_identifier: 420051
+    manufacturer: Yamaha
+    model: NG12/4Fx
+    serial_number: UCCKY01158
+    created_by: 1
+TwinPact100REG_420005:
+    id: <%= (i=i+1) %>
+    name: TwinPact 100/REG
+    description: Portable Audio and DV Deck
+    inventory_identifier: 420005
+    manufacturer: CANOPUS
+    model: TWINPACT100
+    serial_number: 709839
+    created_by: 1
+AudioandDVDeck_420004:
+    id: <%= (i=i+1) %>
+    name: Audio and DV Deck
+    description: Portable Audio and DV Deck
+    inventory_identifier: 420004
+    manufacturer: PANASONIC
+    model: AG-DV2500P
+    serial_number: B5A7764JV3
+    created_by: 1
+EN200N56inchColorTFT_420003:
+    id: <%= (i=i+1) %>
+    name: EN200/N* 5.6" Color TFT
+    description: LCD monitor
+    inventory_identifier: 420003
+    manufacturer: EN200
+    model: EN200NZ-01
+    serial_number: 137025080080
+    created_by: 1
+DataVideoAudioVideoDistributionAmplifierVP299_420065:
+    id: <%= (i=i+1) %>
+    name: DataVideo Audio/Video Distribution Amplifier VP-299
+    description:
+    inventory_identifier: 420065
+    manufacturer: Datavideo
+    model:
+    serial_number: 00010203
+    created_by: 1
+CinemaDisplay20inchWidescreen_420066:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor Po# P0242941
+    inventory_identifier: 420066
+    manufacturer: MAC
+    model:
+    serial_number: 2A5374XTPKK
+    created_by: 1
+ETSPV902VIDEOAUDIOBaluns_420070:
+    id: <%= (i=i+1) %>
+    name: ETS PV902 VIDEO/AUDIO Baluns
+    description: Converts and Transmits full video and two audio channels over a single four-pair UTP run.
+    inventory_identifier: 420070
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+G5Computer_420000:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420000
+    manufacturer:
+    model:
+    serial_number: G580921GQPM
+    created_by: 1
+CinemaDisplay20inchWidescreen_420002:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420002
+    manufacturer: MAC
+    model:
+    serial_number: 
+    created_by: 1
+G5Computer_420001:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420001
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+G5Computer_:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier:
+    manufacturer:
+    model:
+    serial_number: G85143LSQPR
+    created_by: 1
+iSight_420234:
+    id: <%= (i=i+1) %>
+    name: iSight
+    description:
+    inventory_identifier: 420234
+    manufacturer:
+    model:
+    serial_number: 6M5212A8SGGJ
+    created_by: 1
+CinemaDisplay20inchWidescreen_420068:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420068
+    manufacturer: MAC
+    model:
+    serial_number: 2A5434PXUFZ
+    created_by: 1
+CinemaDisplay20inchWidescreen_420086:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420086
+    manufacturer: MAC
+    model:
+    serial_number: 245434KWUFZ
+3CCDCam_420083:
+    id: <%= (i=i+1) %>
+    name: 3CCD Cam
+    description:
+    inventory_identifier: 420083
+    manufacturer: PANASONIC
+    model: PV-AS150
+    serial_number: 
+    created_by: 1
+MarentzSolidStateRecorder_420084:
+    id: <%= (i=i+1) %>
+    name: Marentz Solid State Recorder
+    description: with power adaptor and cord for power adaptor
+    inventory_identifier: 420084
+    manufacturer: MARANTZ
+    model: PMD660
+    serial_number: 20020527013169
+    created_by: 1
+RollsMX422_420082:
+    id: <%= (i=i+1) %>
+    name: Rolls MX422
+    description: Portable/Field Mixer
+    inventory_identifier: 420082
+    manufacturer:
+    model:
+    serial_number: 0523736
+    created_by: 1
+TRENDnet_420100:
+    id: <%= (i=i+1) %>
+    name: TRENDnet
+    description: Gigabit Switch
+    inventory_identifier: 420100
+    manufacturer:
+    model: TEG-SS0TXE
+    serial_number: 0538B1A05298
+    created_by: 1
+TRENDnet_420101:
+    id: <%= (i=i+1) %>
+    name: TRENDnet
+    description: Gigabit Switch
+    inventory_identifier: 420101
+    manufacturer:
+    model: TEG-SS0TXE
+    serial_number: 0538B1A05297
+    created_by: 1
+EDIROLV4VideoMixer_420053:
+    id: <%= (i=i+1) %>
+    name: EDIROL V-4 Video Mixer
+    description: Video and Audio equipment
+    inventory_identifier: 420053
+    manufacturer: Edirol
+    model:
+    serial_number: ZS97708
+    created_by: 1
+USBMIDIinterface8x8_420054:
+    id: <%= (i=i+1) %>
+    name: USB MIDI interface 8x8
+    description: Video and Audio equipment Warburton
+    inventory_identifier: 420054
+    manufacturer: M-Audio
+    model: USB MIDISPORT 8x8/S
+    serial_number: 
+    created_by: 1
+MackieSRM350Speakers_420055:
+    id: <%= (i=i+1) %>
+    name: Mackie SRM 350 Speakers
+    description: Video and Audio equipment Warburton
+    inventory_identifier: 420055
+    manufacturer: Mackie
+    model: SRM350
+    serial_number: 0M15411JU22029
+    created_by: 1
+MackieSRM350Speakers_420056:
+    id: <%= (i=i+1) %>
+    name: Mackie SRM 350 Speakers
+    description: Video and Audio equipment Warburton
+    inventory_identifier: 420056
+    manufacturer: Mackie
+    model: SRM350
+    serial_number: 0M15411JU22599
+    created_by: 1
+MackieSRM350Speakers_420057:
+    id: <%= (i=i+1) %>
+    name: Mackie SRM 350 Speakers
+    description: Video and Audio equipment Warburton
+    inventory_identifier: 420057
+    manufacturer: Mackie
+    model: SRM350
+    serial_number: 0M15411JU2308
+    created_by: 1
+MackieSRM350Speakers_420058:
+    id: <%= (i=i+1) %>
+    name: Mackie SRM 350 Speakers
+    description: Video and Audio equipment Warburton
+    inventory_identifier: 420058
+    manufacturer: Mackie
+    model: SRM350
+    serial_number: 0M15411JU22588
+    created_by: 1
+FrysComputer_420059:
+    id: <%= (i=i+1) %>
+    name: FryÍs Computer
+    description:
+    inventory_identifier: 420059
+    manufacturer:
+    model: FM7850
+    serial_number: 7850FMX51600006
+    created_by: 1
+CinemaDisplay20inchWidescreen_420062:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420062
+    manufacturer: MAC
+    model:
+    serial_number: 2A5186BBPKK
+    created_by: 1
+AirportExtreme_420060:
+    id: <%= (i=i+1) %>
+    name: Airport Extreme
+    description: Wireless Extension
+    inventory_identifier: 420060
+    manufacturer:
+    model:
+    serial_number: H54391QHQ4N
+    created_by: 1
+iSight_420235:
+    id: <%= (i=i+1) %>
+    name: iSight
+    description:
+    inventory_identifier: 420235
+    manufacturer:
+    model:
+    serial_number: 6M5212AUSGJ
+    created_by: 1
+UHFTransmitter10BT_420090:
+    id: <%= (i=i+1) %>
+    name: UHF Transmitter 10BT
+    description:
+    inventory_identifier: 420090
+    manufacturer: AZDEN
+    model:
+    serial_number: 
+    created_by: 1
+UHFReceiver100UPR_420091:
+    id: <%= (i=i+1) %>
+    name: UHF Receiver 100UPR
+    description:
+    inventory_identifier: 420091
+    manufacturer: AZDEN
+    model:
+    serial_number: 
+    created_by: 1
+G5Computer_420092:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420092
+    manufacturer: MAC
+    model:
+    serial_number: 255836
+    created_by: 1
+CinemaDisplay20inchWidescreen_420093:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420093
+    manufacturer: MAC
+    model: M9177LL/A
+    serial_number: 2A602046UF2
+    created_by: 1
+CinemaDisplay20inchWidescreen_420094:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Monitor
+    inventory_identifier: 420094
+    manufacturer: MAC
+    model:
+    serial_number: 2A602012UFZ
+    created_by: 1
+MACMini_420095:
+    id: <%= (i=i+1) %>
+    name: MAC Mini
+    description: Computer G4 1.6 GHZ
+    inventory_identifier: 420095
+    manufacturer: MAC
+    model:
+    serial_number: YM52408NRHR
+    created_by: 1
+Microphone_420096:
+    id: <%= (i=i+1) %>
+    name: Microphone
+    description: Shotgun Mic
+    inventory_identifier: 420096
+    manufacturer: Azden
+    model:
+    serial_number: 
+    created_by: 1
+VideoView_420113:
+    id: <%= (i=i+1) %>
+    name: VideoView
+    description: 2 Port VGA Video Splitter
+    inventory_identifier: 420113
+    manufacturer: startech.com
+    model: ST122
+    serial_number: 9520156
+    created_by: 1
+SanyoPLCXT16_420112:
+    id: <%= (i=i+1) %>
+    name: Sanyo PLC-XT16
+    description: Multimedia Projector
+    inventory_identifier: 420112
+    manufacturer: Sanyo
+    model: PLC-Xt16
+    serial_number: G5710458
+    created_by: 1
+VGASRExtendIt_420109:
+    id: <%= (i=i+1) %>
+    name: VGA SR Extend- It
+    description: VGA-CATS extender with power. Two silver boxes connected with CAT 5 with blue power 5VDC supply (wall-wart) extend-it sender and extend-it receiver.
+    inventory_identifier: 420109
+    manufacturer: Gefen
+    model:
+    serial_number: 15845
+    created_by: 1
+MacMiniIntelAlmond_420110:
+    id: <%= (i=i+1) %>
+    name: Mac Mini Intel (Almond)
+    description: "Intel Core Duo 1.66 GHZ, 512MB, 60GB Airport ID: 00:16:cb:08:87:fb Ethernet ID: 00:16:cb:94:1b:c9"
+    inventory_identifier: 420110
+    manufacturer: Apple
+    model:
+    serial_number: YM61302PVS5
+    created_by: 1
+SanyoPLCXP55Projector_420111:
+    id: <%= (i=i+1) %>
+    name: Sanyo PLC-XP55 Projector
+    description: Projector
+    inventory_identifier: 420111
+    manufacturer: Sanyo
+    model: PLC-XP55
+    serial_number: G4705336
+    created_by: 1
+VGAAmpSplitter_420107:
+    id: <%= (i=i+1) %>
+    name: VGA Amp/Splitter
+    description: Multiple and simultaneous video broadcast up to 2 different locations
+    inventory_identifier: 420107
+    manufacturer: VGA
+    model:
+    serial_number: 
+    created_by: 1
+PanasonicVideoCamera_420108:
+    id: <%= (i=i+1) %>
+    name: Panasonic Video Camera
+    description:
+    inventory_identifier: 420108
+    manufacturer: Panasonic
+    model:
+    serial_number: 
+    created_by: 1
+VideoView_420106:
+    id: <%= (i=i+1) %>
+    name: VideoView
+    description: 2 Port VGA video splitter Comes with power cord
+    inventory_identifier: 420106
+    manufacturer: startech.com
+    model: ST122
+    serial_number: 
+    created_by: 1
+EtsBalun_420075:
+    id: <%= (i=i+1) %>
+    name: Ets Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420075
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+ETSBalun_420072:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420072
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+ETSBalun_420078:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420078
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+ETSBalun_420074:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420074
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+ETSBalun_420079:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420079
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+CELABSAV400SV_420115:
+    id: <%= (i=i+1) %>
+    name: CE LABS AV400SV
+    description: High performance audio and video with S video Distribution amplifier True one to one ration, Four output
+    inventory_identifier: 420115
+    manufacturer: CE LABS
+    model: AV400SV
+    serial_number: 
+    created_by: 1
+G5Computer_420080:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420080
+    manufacturer: Apple
+    model: DAMN performance 1
+    serial_number: 
+    created_by: 1
+ETSBalun_420076:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420076
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+MAudioFirewire410_420116:
+    id: <%= (i=i+1) %>
+    name: M-Audio Firewire 410
+    description: Firewire compatible 4-in / 10-out ASIO 2 Compliant Mixer and software control panel two headphone outs
+    inventory_identifier: 420116
+    manufacturer: M-AUDIO
+    model: Firewire 410
+    serial_number: 040331ME-1
+    created_by: 1
+G5Computer_420117:
+    id: <%= (i=i+1) %>
+    name: G5 Computer
+    description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+    inventory_identifier: 420117
+    manufacturer:
+    model:
+    serial_number: G85085WCQPM
+    created_by: 1
+CAMERA_420102:
+    id: <%= (i=i+1) %>
+    name: CAMERA
+    description: Panasonic Video Camera
+    inventory_identifier: 420102
+    manufacturer: Panasonic
+    model:
+    serial_number: 
+    created_by: 1
+HeadAmp_420119:
+    id: <%= (i=i+1) %>
+    name: Head Amp
+    description: Four output stereo headphone amp  artproaudio.com
+    inventory_identifier: 420119
+    manufacturer: Artcessories
+    model:
+    serial_number: 
+20inchwidescreenMonitor_420120:
+    id: <%= (i=i+1) %>
+    name: 20 inch widescreen Monitor
+    description:
+    inventory_identifier: 420120
+    manufacturer: Apple
+    model:
+    serial_number: 2A6420QMUFZ
+    created_by: 1
+Prosafe8PortGigabitSwitch_420121:
+    id: <%= (i=i+1) %>
+    name: Prosafe 8 Port Gigabit Switch
+    description:
+    inventory_identifier: 420121
+    manufacturer: Netgear
+    model: GS108 v2
+    serial_number: 1DR1653S00E94
+    created_by: 1
+Prosafe8PortGigabitSwitch_420122:
+    id: <%= (i=i+1) %>
+    name: Prosafe 8 Port Gigabit Switch
+    description:
+    inventory_identifier: 420122
+    manufacturer: Netgear
+    model: GS108 v2
+    serial_number: 1DR1653N00E91
+    created_by: 1
+Prosafe16PortGigabitSwitch_420123:
+    id: <%= (i=i+1) %>
+    name: Prosafe 16 Port Gigabit Switch
+    description:
+    inventory_identifier: 420123
+    manufacturer: Netgear
+    model: GS116
+    serial_number: 19E1675H00FAD
+    created_by: 1
+Prosafe16PortGigabitSwitch_420124:
+    id: <%= (i=i+1) %>
+    name: Prosafe 16 Port Gigabit Switch
+    description:
+    inventory_identifier: 420124
+    manufacturer: Netgear
+    model: GS116
+    serial_number: 19E1675H00FAD
+    created_by: 1
+TouchScreenMonitor_420125:
+    id: <%= (i=i+1) %>
+    name: Touch Screen Monitor
+    description: 17" touch screen monitor
+    inventory_identifier: 420125
+    manufacturer: Elo
+    model: ET1715L8CWA-1-a
+    serial_number: 726393341C
+    created_by: 1
+MacMiniPPCCashew_420130:
+    id: <%= (i=i+1) %>
+    name: Mac Mini PPC (Cashew)
+    description: "Intel Core Duo 1.83 GHZ, 1GB, 80GB ethernet ID- 00:16:cb:a7:e0:bd airport ID- 00:17:f2:50:df:30 (originally named Noyce)"
+    inventory_identifier: 420130
+    manufacturer: Apple
+    model: Mini
+    serial_number: G86462J8W0D
+    created_by: 1
+ATM650_420126:
+    id: <%= (i=i+1) %>
+    name: ATM650
+    description: Hypercardoid Dynamic instrument microphone
+    inventory_identifier: 420126
+    manufacturer: Audio-Technica
+    model:
+    serial_number: 
+    created_by: 1
+ATM650_420129:
+    id: <%= (i=i+1) %>
+    name: ATM650
+    description: Hypercardoid Dynamic instrument microphone
+    inventory_identifier: 420129
+    manufacturer: Audio-Technica
+    model:
+    serial_number: 
+    created_by: 1
+StudioPreceisionMonitorSystem_420127:
+    id: <%= (i=i+1) %>
+    name: Studio Preceision Monitor System
+    description: Studeio Preceision Biamplified Direct Field Monitor Event ASP 120V
+    inventory_identifier: 420127
+    manufacturer: Event Electronics
+    model:
+    serial_number: ASP6N01015037
+    created_by: 1
+StudioPreceisionMonitorSystem_420128:
+    id: <%= (i=i+1) %>
+    name: Studio Preceision Monitor System
+    description: Studeio Preceision Biamplified Direct Field Monitor Event ASP 120V
+    inventory_identifier: 420128
+    manufacturer: Event Electronics
+    model:
+    serial_number: ASP6N01015034
+    created_by: 1
+ATM650_420131:
+    id: <%= (i=i+1) %>
+    name: ATM650
+    description: Hypercardoid Dynamic instrument microphone
+    inventory_identifier: 420131
+    manufacturer: Audio-Technica
+    model:
+    serial_number: 
+    created_by: 1
+ETSBalun_420077:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420077
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+    created_by: 1
+ETSBalun_420071:
+    id: <%= (i=i+1) %>
+    name: ETS Balun
+    description: Converts and transmits full video and two audio channels over a single four pair UTP run
+    inventory_identifier: 420071
+    manufacturer: ETS
+    model: PV902
+    serial_number: 
+17LCD_420104:
+    id: <%= (i=i+1) %>
+    name: 17" LCD
+    description: WRITE MORE HERE
+    inventory_identifier: 420104
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+HPPrinter_420132:
+    id: <%= (i=i+1) %>
+    name: HP Printer
+    description: LaserJet 1020
+    inventory_identifier: 420132
+    manufacturer: HP
+    model: 1020
+    serial_number: 
+    created_by: 1
+ViewSonicLCDProjectorTimmy_420133:
+    id: <%= (i=i+1) %>
+    name: ViewSonic LCD Projector (Timmy)
+    description: "Comes With: Remote Control 4 Power Cords Needs/ comes with 2 AA batteries"
+    inventory_identifier: 420133
+    manufacturer: ViewSonic
+    model: PJ452 XGA
+    serial_number: Q9Q062050817
+    created_by: 1
+AVSelector_420139:
+    id: <%= (i=i+1) %>
+    name: AV Selector
+    description: 4 inputs 1 output
+    inventory_identifier: 420139
+    manufacturer: Sony
+    model: SB-V40
+    serial_number: 
+    created_by: 1
+SVideoSwitch_420140:
+    id: <%= (i=i+1) %>
+    name: S-Video Switch
+    description:
+    inventory_identifier: 420140
+    manufacturer: Terk
+    model: VS-4
+    serial_number: 27808672
+    created_by: 1
+MultiMix8Firewire_420141:
+    id: <%= (i=i+1) %>
+    name: MultiMix8 Firewire
+    description: "Comes with: Microphone (420142) + Cord + Stand Headphones Firewire Cable Power Cord"
+    inventory_identifier: 420141
+    manufacturer: Alesis
+    model:
+    serial_number: ALXF1005301
+    created_by: 1
+Microphone_420142:
+    id: <%= (i=i+1) %>
+    name: Microphone
+    description: AM1
+    inventory_identifier: 420142
+    manufacturer: Alesis
+    model:
+    serial_number: 
+    created_by: 1
+VGAExtender_420143:
+    id: <%= (i=i+1) %>
+    name: VGA Extender
+    description: VGA-CATS extender with power. Two silver boxes connected with CAT 5 with blue power 5VDC supply (wall-wart) extend-it sender and extend-it receiver.
+    inventory_identifier: 420143
+    manufacturer: Gefen
+    model:
+    serial_number: 15407
+    created_by: 1
+Projector_420138:
+    id: <%= (i=i+1) %>
+    name: Projector
+    description: In Focus X2 DLP Projector 1600 Lumens 800x600 resolution
+    inventory_identifier: 420138
+    manufacturer: InFocus
+    model:
+    serial_number: AMMC50302688
+    created_by: 1
+PANASONICAGDV2500P_420135:
+    id: <%= (i=i+1) %>
+    name: PANASONIC AG-DV2500P
+    description:
+    inventory_identifier: 420135
+    manufacturer:
+    model:
+    serial_number: J5C9521JV3
+    created_by: 1
+CANOPUSTWINPACT100_420136:
+    id: <%= (i=i+1) %>
+    name: CANOPUS TWINPACT100
+    description:
+    inventory_identifier: 420136
+    manufacturer:
+    model:
+    serial_number: 710507
+    created_by: 1
+Monitor_420137:
+    id: <%= (i=i+1) %>
+    name: Monitor
+    description: Color TFT LCD Monitor EN200/N*
+    inventory_identifier: 420137
+    manufacturer:
+    model:
+    serial_number: E37024470045
+    created_by: 1
+Moggridge15PowerBookG4_420144:
+    id: <%= (i=i+1) %>
+    name: Moggridge 15" PowerBook G4
+    description: "Name: Moggridge Ethernet ID: 00:0d:93:b4:2e:60  Airport ID: 00:0d:93:7d:f0:ac"
+    inventory_identifier: 420144
+    manufacturer: Apple
+    model: G4
+    serial_number: W84306AQHY
+8PortGigabitSwitch_420145:
+    id: <%= (i=i+1) %>
+    name: 8 Port Gigabit Switch
+    description: Asante FriendlyNET GX5-800P 8 Port Gigabit Ethernet Workgroup Switch
+    inventory_identifier: 420145
+    manufacturer: Asante
+    model: GX5-800P
+    serial_number: 542U0467
+    created_by: 1
+MIDISport1x1midiman_420147:
+    id: <%= (i=i+1) %>
+    name: MIDI Sport 1x1 (midiman)
+    description: MIDI Sport 1x1 MIDI to USB
+    inventory_identifier: 420147
+    manufacturer: M-Audio
+    model:
+    serial_number: 
+    created_by: 1
+MIDISport1x1midiman_420148:
+    id: <%= (i=i+1) %>
+    name: MIDI Sport 1x1 (midiman)
+    description: MIDI Sport 1x1 MIDI to USB
+    inventory_identifier: 420148
+    manufacturer: M-Audio
+    model:
+    serial_number: 
+    created_by: 1
+AirportExpressBaseStation_420149:
+    id: <%= (i=i+1) %>
+    name: Airport Express Base Station
+    description: "Ethernet: 0019e3e45c60 AirPort: 0019e3e45c61 Put in Porter D212"
+    inventory_identifier: 420149
+    manufacturer: Apple
+    model:
+    serial_number: 6f709c5lu4s
+    created_by: 1
+AirportExpressBaseStation_420150:
+    id: <%= (i=i+1) %>
+    name: Airport Express Base Station
+    description: "Ethernet ID: 0016CBC3FB13 Airport ID: 0019E3FB0C4A"
+    inventory_identifier: 420150
+    manufacturer: Apple
+    model:
+    serial_number: 6F7136BQVZC
+    created_by: 1
+AirportExpressBaseStation_420151:
+    id: <%= (i=i+1) %>
+    name: Airport Express Base Station
+    description: "Ethernet ID: 0016CBC3FB87 Airport ID: 0019E3FB5903"
+    inventory_identifier: 420151
+    manufacturer: Apple
+    model:
+    serial_number: 6F7136F4VZC
+    created_by: 1
+SolderingStation_420152:
+    id: <%= (i=i+1) %>
+    name: Soldering Station
+    description: Temperature Controlled soldering and de soldering station
+    inventory_identifier: 420152
+    manufacturer: xy tronic
+    model:
+    serial_number: 0108450
+    created_by: 1
+DCpowersupply_420153:
+    id: <%= (i=i+1) %>
+    name: DC power supply
+    description:
+    inventory_identifier: 420153
+    manufacturer: Mastech
+    model: HY3003D
+    serial_number: 0021796
+    created_by: 1
+CeilingMount_420154:
+    id: <%= (i=i+1) %>
+    name: Ceiling Mount
+    description: RPA series LCD/ DLP ceiling mount Max Weight Capacity = 50 LBs
+    inventory_identifier: 420154
+    manufacturer: RPA Series
+    model:
+    serial_number: 5GA9 US4
+    created_by: 1
+multiverseprojector_420155:
+    id: <%= (i=i+1) %>
+    name: multiverse projector
+    description:
+    inventory_identifier: 420155
+    manufacturer: sanyo
+    model: proxtrax PLC-XP57L
+    serial_number: G6Y05972
+    created_by: 1
+TripodTrinity_420156:
+    id: <%= (i=i+1) %>
+    name: Tripod - Trinity
+    description: 3 leg tripod
+    inventory_identifier: 420156
+    manufacturer: manfrotto
+    model: 3130
+    serial_number: 
+    created_by: 1
+Camerakit4_420159:
+    id: <%= (i=i+1) %>
+    name: Camera kit 4
+    description: 420157- lens 420158- lens
+    inventory_identifier: 420159
+    manufacturer:
+    model:
+    serial_number: 
+23InchWidescreenDisplayMonitor_420160:
+    id: <%= (i=i+1) %>
+    name: 23 Inch Widescreen Display Monitor
+    description:
+    inventory_identifier: 420160
+    manufacturer: Apple
+    model:
+    serial_number: 2A7160L8XMN
+    created_by: 1
+Speaker_420161:
+    id: <%= (i=i+1) %>
+    name: Speaker
+    description:
+    inventory_identifier: 420161
+    manufacturer: M-AUDIO
+    model: STUDIOPHILE DX4
+    serial_number: 68DX45464-2
+    created_by: 1
+Speaker_420162:
+    id: <%= (i=i+1) %>
+    name: Speaker
+    description:
+    inventory_identifier: 420162
+    manufacturer: M-AUDIO
+    model: STUDIOPHILE DX4
+    serial_number: 68DX45464-1
+    created_by: 1
+LightStand_420163:
+    id: <%= (i=i+1) %>
+    name: Light Stand
+    description:
+    inventory_identifier: 420163
+    manufacturer: Manfrotto
+    model: 5051BAC
+    serial_number: 
+    created_by: 1
+LightStand_420164:
+    id: <%= (i=i+1) %>
+    name: Light Stand
+    description:
+    inventory_identifier: 420164
+    manufacturer: Manfrotto
+    model: 5051BAC
+    serial_number: 
+    created_by: 1
+PowerMacG4_420166:
+    id: <%= (i=i+1) %>
+    name: Power Mac G4
+    description:
+    inventory_identifier: 420166
+    manufacturer: Apple
+    model:
+    serial_number: XBO121W2JZS
+    created_by: 1
+PowerMacG4_420165:
+    id: <%= (i=i+1) %>
+    name: Power Mac G4
+    description:
+    inventory_identifier: 420165
+    manufacturer: Apple
+    model:
+    serial_number: XB035OLNJNX
+    created_by: 1
+PowerMacG5_420169:
+    id: <%= (i=i+1) %>
+    name: Power Mac G5
+    description: "ETHERNET ID: 000A95C2C192"
+    inventory_identifier: 420169
+    manufacturer: Apple
+    model:
+    serial_number: G8425ARMQPR
+    created_by: 1
+POWERMACG5_420170:
+    id: <%= (i=i+1) %>
+    name: POWER MAC G5
+    description: "ETHERNET ID: 000A95D4BB30"
+    inventory_identifier: 420170
+    manufacturer: APPLE
+    model:
+    serial_number: G84249P1QPR
+    created_by: 1
+POWERMACG5_420171:
+    id: <%= (i=i+1) %>
+    name: POWER MAC G5
+    description: "ETHERNET ID: 000D93AFF32C"
+    inventory_identifier: 420171
+    manufacturer: APPLE
+    model:
+    serial_number: G8424B1GQPR
+    created_by: 1
+POWERMACG5_420172:
+    id: <%= (i=i+1) %>
+    name: POWER MAC G5
+    description: "BAD OPTICAL  ETHERNET ID:000D932CBAAY"
+    inventory_identifier: 420172
+    manufacturer: APPLE
+    model:
+    serial_number: G8425AS8QPR
+5PortGigabitSwitch_420174:
+    id: <%= (i=i+1) %>
+    name: 5 Port Gigabit Switch
+    description:
+    inventory_identifier: 420174
+    manufacturer: Netgear
+    model: GS105
+    serial_number: 1FD1765P01F50
+5PortGigabitSwitch_420175:
+    id: <%= (i=i+1) %>
+    name: 5 Port Gigabit Switch
+    description:
+    inventory_identifier: 420175
+    manufacturer: Netgear
+    model: GS105
+    serial_number: 1FD1765G01FAF
+    created_by: 1
+Prosafe8PortGigabitSwitch_420177:
+    id: <%= (i=i+1) %>
+    name: Prosafe 8 Port Gigabit Switch
+    description:
+    inventory_identifier: 420177
+    manufacturer: Netgear
+    model: GS108 v2
+    serial_number: 1DR1773W01C06
+    created_by: 1
+Prosafe8PortGigabitSwitch_420178:
+    id: <%= (i=i+1) %>
+    name: Prosafe 8 Port Gigabit Switch
+    description:
+    inventory_identifier: 420178
+    manufacturer: Netgear
+    model: GS108 v2
+    serial_number: 1DR1773X01C07
+5PortGigabitSwitch_420179:
+    id: <%= (i=i+1) %>
+    name: 5 Port Gigabit Switch
+    description:
+    inventory_identifier: 420179
+    manufacturer: Netgear
+    model: GS105
+    serial_number: 1FD1785T0011B
+5PortGigabitSwitch_420180:
+    id: <%= (i=i+1) %>
+    name: 5 Port Gigabit Switch
+    description:
+    inventory_identifier: 420180
+    manufacturer: Netgear
+    model: GS105
+    serial_number: 1FD1785R00119
+    created_by: 1
+LogitechX53051SurroundSoundSystem_420181:
+    id: <%= (i=i+1) %>
+    name: Logitech X-530 5.1 Surround Sound System
+    description: Currently installed in kitchen
+    inventory_identifier: 420181
+    manufacturer:
+    model:
+    serial_number: R726
+    created_by: 1
+LogitechX23021SoundSystem_420182:
+    id: <%= (i=i+1) %>
+    name: Logitech X-230 2.1 Sound System
+    description:
+    inventory_identifier: 420182
+    manufacturer:
+    model:
+    serial_number: A716
+    created_by: 1
+Azden10BTWirelessLavMicTransmitter_420183:
+    id: <%= (i=i+1) %>
+    name: Azden 10BT Wireless Lav Mic Transmitter
+    description: Currently set to Group 0, Channel 1
+    inventory_identifier: 420183
+    manufacturer: Azden
+    model: 10BT
+    serial_number: T70620056
+    created_by: 1
+Azden100UPRWirelessReciever_420184:
+    id: <%= (i=i+1) %>
+    name: Azden 100UPR Wireless Reciever
+    description: Currently set to Group 0, Channel 1
+    inventory_identifier: 420184
+    manufacturer: Azden
+    model: 100UPR
+    serial_number: 70520084
+    created_by: 1
+CanonDigitalRebelXTi_420185:
+    id: <%= (i=i+1) %>
+    name: Canon Digital Rebel XTi
+    description: "Includes: Lens Cap 4 GB SanDisk CompactFlash Card USB Cable 1/8\" mono -> composite cable Canon UV Haze Filter (58mm) Battery Charger and Battery (not an extra battery)"
+    inventory_identifier: 420185
+    manufacturer: Canon
+    model: Digital Rebel XTi
+    serial_number: 0920417617
+    created_by: 1
+RollsMX41bStereoPassiveMixer_420186:
+    id: <%= (i=i+1) %>
+    name: Rolls MX41b Stereo Passive Mixer
+    description: Also usable as a 4 to 1 audio signal splitter, if all sliders are all the way up.
+    inventory_identifier: 420186
+    manufacturer: Rolls
+    model: MX41b
+    serial_number: 0641927
+    created_by: 1
+BoteroCollapsible5x7BlackWhiteBackdrop_420187:
+    id: <%= (i=i+1) %>
+    name: Botero Collapsible 5'x7' Black/White Backdrop
+    description:
+    inventory_identifier: 420187
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+SamsonWirelessLavTransmitter_420188:
+    id: <%= (i=i+1) %>
+    name: Samson Wireless Lav Transmitter
+    description: UHF Beltpack Transmitter Ch U6 Includes Element, Windscreen, Clip, miniXLR - XLR
+    inventory_identifier: 420188
+    manufacturer:
+    model:
+    serial_number: 11U602068
+    created_by: 1
+SamsonWirelessLavReciever_420189:
+    id: <%= (i=i+1) %>
+    name: Samson Wireless Lav Reciever
+    description: UM1 Micro Diversity Reviever 800 MHz, Ch U6
+    inventory_identifier: 420189
+    manufacturer:
+    model:
+    serial_number: N382
+    created_by: 1
+WiiRemoteandNunchuckController_420193:
+    id: <%= (i=i+1) %>
+    name: Wii Remote and Nunchuck Controller
+    description:
+    inventory_identifier: 420193
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+RFModulator_420194:
+    id: <%= (i=i+1) %>
+    name: RF Modulator
+    description: RF Modulator with Composite and S-Video Inputs
+    inventory_identifier: 420194
+    manufacturer:
+    model:
+    serial_number: 0613
+    created_by: 1
+WirelessCameraKit_420195:
+    id: <%= (i=i+1) %>
+    name: Wireless Camera Kit
+    description: "Contains: Radio AV Reviever (2.4 GHz)     DV 8V Power Brick Wireless Camera     8V Power Brick     9V Battery Connector"
+    inventory_identifier: 420195
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+SHURESM63OMNIDYNAMICMIC_420197:
+    id: <%= (i=i+1) %>
+    name: SHURE SM63 OMNI DYNAMIC MIC
+    description: Portable Audio and DVDeck Short silver mic with white screen.
+    inventory_identifier: 420197
+    manufacturer: SHURE
+    model: SM63
+    serial_number: 
+    created_by: 1
+SanDisk1GBCompactFlashMemoryCard_420198:
+    id: <%= (i=i+1) %>
+    name: SanDisk 1GB CompactFlash Memory Card
+    description:
+    inventory_identifier: 420198
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+ShureSM57Microphone_420200:
+    id: <%= (i=i+1) %>
+    name: Shure SM57 Microphone
+    description:
+    inventory_identifier: 420200
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+TripodTriigdor_420201:
+    id: <%= (i=i+1) %>
+    name: Tripod - Triigdor
+    description:
+    inventory_identifier: 420201
+    manufacturer: Bogen
+    model: 3046
+    serial_number: 
+    created_by: 1
+TripodTrixell_420202:
+    id: <%= (i=i+1) %>
+    name: Tripod - Trixell
+    description:
+    inventory_identifier: 420202
+    manufacturer: Bogen
+    model: 3046
+    serial_number: 
+    created_by: 1
+TripodTriton_420203:
+    id: <%= (i=i+1) %>
+    name: Tripod - Triton
+    description: Used to be named Fred
+    inventory_identifier: 420203
+    manufacturer: Manfrotto
+    model: 3021BN
+    serial_number: 
+    created_by: 1
+MonopodMonoscelous_420204:
+    id: <%= (i=i+1) %>
+    name: Monopod - Monoscelous
+    description: Used to be labeled Cyclops 1
+    inventory_identifier: 420204
+    manufacturer: Manfrotto
+    model: 682B
+    serial_number: A0199304
+    created_by: 1
+MonopodMonotague_420205:
+    id: <%= (i=i+1) %>
+    name: Monopod - Monotague
+    description: Used to be labeled Monopod ALPHA, and Cyclops 2
+    inventory_identifier: 420205
+    manufacturer: Manfrotto
+    model: 682B
+    serial_number: A0199299
+    created_by: 1
+MicStandMichael_420206:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - Michael
+    description:
+    inventory_identifier: 420206
+    manufacturer: Radio Shack
+    model:
+    serial_number: 
+    created_by: 1
+MicStandMicRon_420207:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - "Mic Ron"
+    description: Used to be labeled Mic Stand THREE
+    inventory_identifier: 420207
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+MicStandMickey_420208:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - Mickey
+    description: Used to be labeled Mic Stand TWO
+    inventory_identifier: 420208
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+MicStandMichelangelo_420209:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - Michelangelo
+    description:
+    inventory_identifier: 420209
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+MicStandMichelle_420210:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - Michelle
+    description: Used to be labeled Mic Stand ALPHA
+    inventory_identifier: 420210
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+MicStandMicah_420211:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - Micah
+    description:
+    inventory_identifier: 420211
+    manufacturer: Radio Shack
+    model:
+    serial_number: 
+    created_by: 1
+MicStandMicMcCann_420212:
+    id: <%= (i=i+1) %>
+    name: Mic Stand - Mic McCann
+    description:
+    inventory_identifier: 420212
+    manufacturer: Radio Shack
+    model:
+    serial_number: 
+    created_by: 1
+PowerMacG5Gorkon_420168:
+    id: <%= (i=i+1) %>
+    name: Power Mac G5 - Gorkon
+    description: "ETHERNET ID: 000A95C2CB80  (Used to be named Juke)"
+    inventory_identifier: 420168
+    manufacturer: Apple
+    model:
+    serial_number: 68425H1TQPR
+    created_by: 1
+EMUMIDI1x1USBInterface_420218:
+    id: <%= (i=i+1) %>
+    name: E-MU MIDI 1x1 USB Interface
+    description:
+    inventory_identifier: 420218
+    manufacturer: E-MU
+    model: EM8780
+    serial_number: MAEM8780751R00363T
+    created_by: 1
+MAudioFirewire410_420219:
+    id: <%= (i=i+1) %>
+    name: M-Audio Firewire 410
+    description: 4 in, 10 out FW Mobile Recording Interface
+    inventory_identifier: 420219
+    manufacturer: M-Audio
+    model: Firewire 410
+    serial_number: 
+    created_by: 1
+MAudioFirewire410_420220:
+    id: <%= (i=i+1) %>
+    name: M-Audio Firewire 410
+    description: 4 in, 10 out FW Mobile Recording Interface
+    inventory_identifier: 420220
+    manufacturer: M-Audio
+    model: Firewire 410
+    serial_number: 
+    created_by: 1
+FoldingProjectionScreenwithStand_420221:
+    id: <%= (i=i+1) %>
+    name: Folding Projection Screen with Stand
+    description:
+    inventory_identifier: 420221
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+CTX17LCDMonitor_420224:
+    id: <%= (i=i+1) %>
+    name: CTX 17" LCD Monitor
+    description: Built in DVI Built in Speakers D-Sub in Black and silver casing
+    inventory_identifier: 420224
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+WacomIntuos3Tablet_420225:
+    id: <%= (i=i+1) %>
+    name: Wacom Intuos 3 Tablet
+    description: Graphics Tablet with mouse and pen
+    inventory_identifier: 420225
+    manufacturer: Wacom
+    model: PTZ-631W
+    serial_number: 7BZM10931
+    created_by: 1
+FlipVideoCamera_420213:
+    id: <%= (i=i+1) %>
+    name: Flip Video Camera
+    description:
+    inventory_identifier: 420213
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+FlipVideoCamera_420215:
+    id: <%= (i=i+1) %>
+    name: Flip Video Camera
+    description:
+    inventory_identifier: 420215
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+FlipVideoCamera_420214:
+    id: <%= (i=i+1) %>
+    name: Flip Video Camera
+    description:
+    inventory_identifier: 420214
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+SanyoProjector5500Lumens_420217:
+    id: <%= (i=i+1) %>
+    name: Sanyo Projector, 5500 Lumens
+    description: "5500 ANSI Lumens Contrast 1000:1 6.6x12.6x16.9 inches HDTV 720p, 1080i compatible DVI-D, Component Native 1024x768"
+    inventory_identifier: 420217
+    manufacturer: Sanyo
+    model: PLC-XP57L
+    serial_number: G7Y12282
+    created_by: 1
+NikonLens_420157:
+    id: <%= (i=i+1) %>
+    name: Nikon Lens
+    description:
+    inventory_identifier: 420157
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+NikonLensMicro60mm_420158:
+    id: <%= (i=i+1) %>
+    name: Nikon Lens Micro 60mm
+    description: "AF Micro Mikkor 60mm 1:2:8 D"
+    inventory_identifier: 420158
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+TrendnetKVMCAT5ExtensionKit_420026:
+    id: <%= (i=i+1) %>
+    name: Trendnet KVM=>CAT5 Extension Kit
+    description: PS/2 + VGA over CAT5 1280x1024 max res
+    inventory_identifier: 420026
+    manufacturer: Trendnet
+    model: TK-EX2
+    serial_number: GW0743X200106
+    created_by: 1
+TrendnetKVMCAT5ExtensionKit_420027:
+    id: <%= (i=i+1) %>
+    name: Trendnet KVM=>CAT5 Extension Kit
+    description: PS/2 + VGA over CAT5 1280x1024 max res
+    inventory_identifier: 420027
+    manufacturer: Trendnet
+    model: TK-EX2
+    serial_number: GW0743X200103
+    created_by: 1
+TrendnetKVMCAT5ExtensionKit_420028:
+    id: <%= (i=i+1) %>
+    name: Trendnet KVM=>CAT5 Extension Kit
+    description: PS/2 + VGA over CAT5 1280x1024 max res
+    inventory_identifier: 420028
+    manufacturer: Trendnet
+    model: TK-EX2
+    serial_number: GW0743X200102
+    created_by: 1
+TrendnetKVMCAT5ExtensionKit_420029:
+    id: <%= (i=i+1) %>
+    name: Trendnet KVM=>CAT5 Extension Kit
+    description: PS/2 + VGA over CAT5 1280x1024 max res
+    inventory_identifier: 420029
+    manufacturer: Trendnet
+    model: TK-EX2
+    serial_number: GW0743X200101
+    created_by: 1
+NikonLens_420196:
+    id: <%= (i=i+1) %>
+    name: Nikon Lens
+    description: AF-S Nikkon 18-135mm
+    inventory_identifier: 420196
+    manufacturer:
+    model:
+    serial_number: 
+20AppleCinemaDisplay_420008:
+    id: <%= (i=i+1) %>
+    name: 20" Apple Cinema Display
+    description: Currently resides on Lyle's desk (04-23-08)
+    inventory_identifier: 420008
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+iMac216GHz1GB250GB19Screen_420176:
+    id: <%= (i=i+1) %>
+    name: iMac 2.16 GHz, 1GB, 250 GB, 19" Screen
+    description: "MAC: 00:17:f2:ce:22:03 Name: DANM Lecture Lives in D-245 (08-04-28)"
+    inventory_identifier: 420176
+    manufacturer:
+    model:
+    serial_number: W87017JDVUV
+17CTXLCDScreen_420230:
+    id: <%= (i=i+1) %>
+    name: 17" CTX LCD Screen
+    description: Currently in DANM Lounge (08-04-28)
+    inventory_identifier: 420230
+    manufacturer:
+    model: S966G
+    serial_number: 1921-J01
+    created_by: 1
+DigiDesigndigi002rack_420231:
+    id: <%= (i=i+1) %>
+    name: DigiDesign digi002 rack
+    description: Currently in the audio room D217 (08-04-28)
+    inventory_identifier: 420231
+    manufacturer: DigiDesign
+    model: digi002 rack
+    serial_number: AU7100300G
+    created_by: 1
+DellIntelDesktopGeordi_420240:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Geordi
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:F3:80:EB"
+    inventory_identifier: 420240
+    manufacturer: Dell
+    model:
+    serial_number: 27Y6W21
+    created_by: 1
+DellIntelDesktopWorf_420241:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Worf
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:F3:80:E2"
+    inventory_identifier: 420241
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktop_420242:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop -
+    description: "2.39GHz, 512 MB, 40 GB MAC:"
+    inventory_identifier: 420242
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktop_420243:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop -
+    description: "2.39GHz, 512 MB, 40 GB MAC:"
+    inventory_identifier: 420243
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktopQ_420244:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Q
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:f3:80:b9"
+    inventory_identifier: 420244
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktopBeverly_420245:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Beverly
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:F3:82:3E"
+    inventory_identifier: 420245
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktopWilliam_420246:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - William
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:F3:82:58"
+    inventory_identifier: 420246
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktopJeanLuc_420247:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Jean Luc
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:F3:84:4B"
+    inventory_identifier: 420247
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktopData_420248:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Data
+    description: "2.39GHz, 512 MB, 40 GB MAC:  ---2 beeps at startup---"
+    inventory_identifier: 420248
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+DellIntelDesktopWesley_420249:
+    id: <%= (i=i+1) %>
+    name: Dell Intel Desktop - Wesley
+    description: "2.39GHz, 512 MB, 40 GB MAC: 00:08:74:F3:82:78"
+    inventory_identifier: 420249
+    manufacturer: Dell
+    model:
+    serial_number: 
+    created_by: 1
+LastoliterayD8withUmbrella_420233:
+    id: <%= (i=i+1) %>
+    name: Lastolite rayD8 with Umbrella
+    description:
+    inventory_identifier: 420233
+    manufacturer: Lastolite
+    model: rayD8
+    serial_number: 
+    created_by: 1
+LastoliterayD8withUmbrella_420232:
+    id: <%= (i=i+1) %>
+    name: Lastolite rayD8 with Umbrella
+    description:
+    inventory_identifier: 420232
+    manufacturer: Lastolite
+    model: rayD8
+    serial_number: 
+    created_by: 1
+CinemaDisplay20inchWidescreen_420236:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description: Currently in D-120 (08-04-29)
+    inventory_identifier: 420236
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+Apple15Display_420237:
+    id: <%= (i=i+1) %>
+    name: Apple 15" Display
+    description: Currently in D-120 (08-04-29)
+    inventory_identifier: 420237
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+Apple15Display_420238:
+    id: <%= (i=i+1) %>
+    name: Apple 15" Display
+    description: Currently in D-120 (08-04-29)
+    inventory_identifier: 420238
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+HPScanner_420239:
+    id: <%= (i=i+1) %>
+    name: HP Scanner
+    description: Currently in D-120 (08-04-29)
+    inventory_identifier: 420239
+    manufacturer: HP
+    model: Scanjet G4010
+    serial_number: CN75QA614Q
+    created_by: 1
+Sony17TFTLCDScreen_420250:
+    id: <%= (i=i+1) %>
+    name: Sony 17" TFT LCD Screen
+    description:
+    inventory_identifier: 420250
+    manufacturer: Sony
+    model:
+    serial_number: 4257730
+    created_by: 1
+Sony17TFTLCDScreen_420251:
+    id: <%= (i=i+1) %>
+    name: Sony 17" TFT LCD Screen
+    description:
+    inventory_identifier: 420251
+    manufacturer: Sony
+    model:
+    serial_number: 4257727
+    created_by: 1
+Acer17Widescreen_420105:
+    id: <%= (i=i+1) %>
+    name: Acer 17" Widescreen
+    description:
+    inventory_identifier: 420105
+    manufacturer:
+    model:
+    serial_number: 
+20iMac_420252:
+    id: <%= (i=i+1) %>
+    name: 20" iMac
+    description: "2GHz, 1GB RAM, 250GB HD,20\" Display Mac: 00:1e:c2:04:3a:3f"
+    inventory_identifier: 420252
+    manufacturer: Apple
+    model: iMac
+    serial_number: W87508WUX85
+    created_by: 1
+Sun17Display_420257:
+    id: <%= (i=i+1) %>
+    name: Sun 17" Display
+    description:
+    inventory_identifier: 420257
+    manufacturer: Sun
+    model: LSA800
+    serial_number: 
+    created_by: 1
+Sun17Display_420258:
+    id: <%= (i=i+1) %>
+    name: Sun 17" Display
+    description:
+    inventory_identifier: 420258
+    manufacturer: Sun
+    model: LSA800
+    serial_number: 
+    created_by: 1
+Sun17Display_420259:
+    id: <%= (i=i+1) %>
+    name: Sun 17" Display
+    description:
+    inventory_identifier: 420259
+    manufacturer: Sun
+    model: LSA800
+    serial_number: 
+    created_by: 1
+Sun17Display_420260:
+    id: <%= (i=i+1) %>
+    name: Sun 17" Display
+    description:
+    inventory_identifier: 420260
+    manufacturer: Sun
+    model: LSA800
+    serial_number: 
+    created_by: 1
+SpeakerStand_420253:
+    id: <%= (i=i+1) %>
+    name: Speaker Stand
+    description:
+    inventory_identifier: 420253
+    manufacturer: On Stage Stands
+    model: OSS SS7761B
+    serial_number: 
+    created_by: 1
+SpeakerStand_420254:
+    id: <%= (i=i+1) %>
+    name: Speaker Stand
+    description:
+    inventory_identifier: 420254
+    manufacturer: On Stage Stands
+    model: OSS SS7761B
+    serial_number: 
+    created_by: 1
+SpeakerStand_420255:
+    id: <%= (i=i+1) %>
+    name: Speaker Stand
+    description:
+    inventory_identifier: 420255
+    manufacturer: On Stage Stands
+    model: OSS SS7761B
+    serial_number: 
+    created_by: 1
+SpeakerStand_420256:
+    id: <%= (i=i+1) %>
+    name: Speaker Stand
+    description:
+    inventory_identifier: 420256
+    manufacturer: On Stage Stands
+    model: OSS SS7761B
+    serial_number: 
+    created_by: 1
+CinemaDisplay20inchWidescreen_420267:
+    id: <%= (i=i+1) %>
+    name: Cinema Display 20" Widescreen
+    description:
+    inventory_identifier: 420267
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+SharpLCDTVDVDPlayer_420272:
+    id: <%= (i=i+1) %>
+    name: Sharp LCD TV/DVD Player
+    description: Liquid Crystal TC
+    inventory_identifier: 420272
+    manufacturer: Sharp
+    model: LC-19DV12U
+    serial_number: 707858245 A
+    created_by: 1
+SharpLCDTVDVDPlayer_420271:
+    id: <%= (i=i+1) %>
+    name: Sharp LCD TV/DVD Player
+    description: Liquid Crystal TC
+    inventory_identifier: 420271
+    manufacturer: Sharp
+    model: LC-19DV12U
+    serial_number: 706852186 A
+    created_by: 1
+HP24WidescreenLCD_420268:
+    id: <%= (i=i+1) %>
+    name: HP 24" Widescreen LCD
+    description:
+    inventory_identifier: 420268
+    manufacturer: HP
+    model: w2408h
+    serial_number: CND8120P7Q
+    created_by: 1
+HP24WidescreenLCD_420269:
+    id: <%= (i=i+1) %>
+    name: HP 24" Widescreen LCD
+    description:
+    inventory_identifier: 420269
+    manufacturer: HP
+    model: w2408h
+    serial_number: CND8120P7N
+    created_by: 1
+SanyoProxtraXMultiverseProjector_420276:
+    id: <%= (i=i+1) %>
+    name: Sanyo Pro xtraX Multiverse Projector
+    description:
+    inventory_identifier: 420276
+    manufacturer:
+    model:
+    serial_number: 68117845
+    created_by: 1
+MacPro_420274:
+    id: <%= (i=i+1) %>
+    name: Mac Pro
+    description:
+    inventory_identifier: 420274
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1
+MacPro_420275:
+    id: <%= (i=i+1) %>
+    name: Mac Pro
+    description:
+    inventory_identifier: 420275
+    manufacturer:
+    model:
+    serial_number: 
+    created_by: 1

@@ -1,0 +1,4 @@
+page.visual_effect :highlight, "groups"
+page.replace_html "feedback", "Re-ordered the Groups"
+page.visual_effect :appear, "feedback", :duration => 0.2
+page.visual_effect :fade, 'feedback',:delay => 2.0, :duration => 1.0

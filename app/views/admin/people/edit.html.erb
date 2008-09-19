@@ -1,0 +1,38 @@
+<div class="mainBlock">
+<h1>Editing <%= h @person.display_name %></h1>
+
+<% form_for([:admin,@person]) do |f| %>
+  <%= f.error_messages %>
+
+	<p>
+		<%= f.label :name %><br />
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :administrator %>
+		<%= f.check_box :administrator %>
+	</p>
+
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+
+
+<p>
+<% for group in Group.find(:all) %>
+<div>
+<%= check_box_tag "person[group_ids][]", group.id, @person.groups.include?(group) %> <%= group.name%>
+</div>
+<% end %>
+</p>
+
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', ([:admin,@person]) %> |
+<%= link_to 'Back', admin_people_path %>
+</div>

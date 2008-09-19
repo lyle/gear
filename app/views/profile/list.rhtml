@@ -1,0 +1,23 @@
+<h1>Listing people</h1>
+
+<table>
+  <tr>
+    <th>Person</th>
+	<th>Groups</th>
+    <th>Active Items</th>
+  </tr>
+ 
+  
+<% for person in @people %>
+  <tr>
+    <td><%= link_to person.display_name, :action => 'show', :id => person %></td>
+	<td><%= person.groups.join(", ") %></td>
+    <td><%= person.checked_out_item_count%></td>
+  </tr>
+<% end %>
+</table>
+
+<%= will_paginate @people %>
+
+<br />
+

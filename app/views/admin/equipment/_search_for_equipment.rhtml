@@ -1,0 +1,25 @@
+<div class="liveSearch">
+<%= form_tag({:action=> "live_search"}, { :onSubmit => "Element.show('spinner');" }) %>
+<label for="searchtext">Live Gear Search:</label>
+<%= text_field_tag :searchtext%>
+<img alt="spinner" id="spinner" src="/images/loadinfo.net.gif" style="display:none;" align="top"/>
+
+</form>
+</div>
+<%= observe_field(:searchtext,
+                 :frequency => 0.5,
+		 :with => 'searchtext',
+                 :update => :search_hits,
+                 :loading => "Element.show('spinner')",
+                 :complete => "Element.hide('spinner');tb_init('a.thickbox, area.thickbox, input.thickbox');",
+                 :url => { :action => :live_search, :controller => 'equipment' }) %>
+<table width="100%">
+<tr>
+    <th>DANM S/N</th>
+    <th>Equipment</th>
+    <th>Who / Where</th>
+    <th></th>
+</tr>
+<tbody id="search_hits"><% if equipment %><%= render :partial => 'admin/equipment/item', :collection => equipment, :locals => {:show_children =>false} %><% end%></tbody>
+
+</table>

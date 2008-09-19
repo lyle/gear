@@ -1,0 +1,131 @@
+h1. Welcome to DANM Gear
+
+DANM Gear is an equipment management system written for the Digital Arts and New Media Program at UCSC.
+The system handles pieces of inventoried equipment that can be transferred to people and locations.
+
+h1. Ideas 
+
+# Creativity can lead to good things.
+# The more creativity that is done the more chance of good things.
+# Equipment is helpful to creativity.
+# Equipment locked away is not being used for creativity.
+# Different people need things at different times.
+# Creativity is sometimes spontaneous.
+
+h1. Philosophy
+
+Traditional checkout systems work under the paradigm of a manager/owner and a user with this kind of 
+work flow:
+
+# A user requests for equipment
+# The manager loans the item out to that user for a limited time
+# The user does the work with the equipment
+# The user returns the item.
+# The manager advertises that the item is available for other users.
+
+In this form of equipment checkout here are some givens:
+
+# While a person has the item it is not available to anyone else.
+# To make items available to others they have to be returned to the manager.
+
+The system is designed to only be functional if the items spend time with the manager.
+But, while with the manager, the items are not being used for creativity.
+
+Most systems solve this inherent problem of "items in the checkout room not being used"
+by creating a strict reservation process. So that people need to bring things back at a specific time
+and others can then check them back out at that time.
+
+The problem with a strict reservation process is that it removes the ability to be spontaneously creative.
+
+
+h1. Rails App
+
+This is a rails application, btw.
+
+
+h1. Install
+
+This install assumes you are running this on OS X.5 Server. 
+
+h2. Get Rails 2.1 or later
+<pre>
+sudo gem install rails
+</pre>
+
+h2. Update your gem system
+<pre>
+sudo gem update --system
+</pre>
+
+h2. Update your existing Gems
+<pre>
+sudo gem update
+</pre>
+
+h2. Get the Will Paginate Plugin
+<pre>
+sudo gem install will_paginate
+</pre>
+
+h2.Download and install Active LDAP
+
+http://rubyforge.org/frs/?group_id=381
+I downloaded activeldap-1.0.1.gem
+<pre>
+curl -O http://rubyforge.org/frs/download.php/38339/activeldap-1.0.1.gem
+</pre>
+and then installed it with:
+<pre>
+sudo gem install activeldap-1.0.1.gem --local
+</pre>
+You may also need ruby-net-ldap
+<pre>
+sudo gem install ruby-net-ldap
+</pre>
+
+h2. You need Ruby LDAP
+
+
+http://sourceforge.net/projects/ruby-ldap/
+Download the tar.gz to your server. Untar it:
+<pre>
+ tar xvf ruby-ldap-0.9.7.tar.gz
+</pre>
+then change into that dir
+<pre>
+cd ruby-ldap-0.9.7
+</pre>
+And run it:
+<pre>
+ruby extconf.rb 
+make
+make install
+</pre>
+
+h2. Install Fleximage
+
+Follow these instructions: http://github.com/Squeegy/fleximage/wikis/gettingstarted
+
+
+h2. Catch the Stuff you missed
+<code>
+rake gems:install
+</code>
+That ran this for me:
+<code>
+gem install mislav-will_paginate --version "~> 2.3.2" --source http://gems.github.com
+</code>
+
+h2. Import some fake data if you want:
+<pre>
+rake db:fixtures:load FIXTURES=equipment RAILS_ENV=development
+</pre>
+
+h2. Passenger or mod_rails
+
+<p>I have wanted a better way to run rails applications for a while now, and it looks like "Passenger":http://www.modrails.com/ might be the way to go. </p>
+<pre>
+sudo gem install passenger
+</pre>
+
+ ./script/server -p 3000 -e production

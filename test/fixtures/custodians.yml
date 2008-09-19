@@ -1,0 +1,141 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+lylenikon:
+  id: 1
+  equipment_id: 1
+  person_id: 1
+  reservation_id: 
+  created_by: 1
+  created_at: 2007-10-26 23:30:01
+  updated_at: 2007-10-28 23:30:01
+  location: Checkout
+  notes: 
+  child_id: 5
+  confirmed: true
+  confirmed_at: 2007-10-28 23:30:01
+  took_custody_at: 2007-10-26 23:30:01
+  transfered_custody_at: 2007-10-28 23:30:01
+lylescandisk:
+   id: 2
+   equipment_id: 2
+   person_id: 1
+   reservation_id: 
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: Checkout
+   notes: 
+   child_id: 6
+   confirmed: true
+   confirmed_at: 2007-10-28 23:30:01
+   took_custody_at: 2007-10-26 23:30:01
+   transfered_custody_at: 2007-10-28 23:30:01
+lylescandisk2:
+   id: 3
+   equipment_id: 3
+   person_id: 1
+   reservation_id: 
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: Checkout
+   notes: 
+   child_id: 7
+   confirmed: true
+   took_custody_at: 2007-10-26 23:30:01
+   transfered_custody_at: 2007-10-28 23:30:01
+   confirmed_at: 2007-10-28 23:30:01
+lylenikkar:
+   id: 4
+   equipment_id: 4
+   person_id: 1
+   reservation_id:
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: Checkout
+   notes: 
+   child_id: 8
+   confirmed: true
+   took_custody_at: 2007-10-26 23:30:01
+   transfered_custody_at: 2007-10-28 23:30:01
+   confirmed_at: 2007-10-28 23:30:01
+leanikon:
+  id: 5
+  equipment_id: 1
+  person_id: 3
+  reservation_id: 1
+  created_by: 3
+  created_at: 2007-10-26 23:30:01
+  updated_at: 2007-10-28 23:30:01
+  location: 
+  notes: 
+  child_id: 
+  confirmed: true
+  took_custody_at: 2007-10-26 23:30:01
+leascandisk:
+   id: 6
+   equipment_id: 2
+   person_id: 3
+   reservation_id: 2
+   created_by: 3
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: 
+   notes: 
+   child_id: 
+   confirmed: true
+   confirmed_at:  2007-10-26 23:30:01
+leascandisk2:
+   id: 7
+   equipment_id: 3
+   person_id: 3
+   reservation_id: 3
+   created_by: 3
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: 
+   notes: 
+   child_id: 
+   confirmed: true
+   took_custody_at: 2007-10-26 23:30:01
+   confirmed_at:  2007-10-26 23:30:01
+leanikkar:
+   id: 8
+   equipment_id: 4
+   person_id: 3
+   reservation_id: 4
+   created_by: 3
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: 
+   notes: 
+   child_id: 
+   confirmed: false
+   took_custody_at: 2007-10-26 23:30:01
+lyleprojecto1:
+   id: 9
+   equipment_id: 8
+   person_id: 1
+   reservation_id: 5
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: 
+   notes: 
+   child_id: 
+   confirmed: true
+   took_custody_at: 2007-10-26 23:30:01
+   confirmed_at:  2007-10-26 23:30:01
+lyleprojecto2:
+   id: 10
+   equipment_id: 9
+   person_id: 1
+   reservation_id: 6
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-28 23:30:01
+   location: 
+   notes: 
+   child_id: 
+   confirmed: false
+   took_custody_at: 2007-10-26 23:30:01

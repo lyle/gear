@@ -1,0 +1,23 @@
+
+<div class="mainBlock">
+<h1>Listing people</h1>
+
+<table width="100%">
+  <tr>
+    <th>Name</th>
+	<th>Groups</th>
+    <th>Actions</th>
+  </tr>
+
+<% for person in @people %>
+  <tr>
+    <td><%=h person.display_name %><%= " (admin)" if person.administrator? %></td>
+	<td><%= person.groups.join(', ')  %></td>
+    <td><%= link_to 'Show', :controller=>"admin/people", :action=>"show", :id=>person %> | <%= link_to 'Edit', edit_admin_person_path(person) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+</div>

@@ -1,0 +1,40 @@
+<div class="mainBlock">
+	<%= error_messages_for 'equipment' %>
+
+	
+	<h2><%= h @equipment.name  %></h2>
+	
+	<p class="notes"><label>Notes</label><br /><%= h @equipment.notes%></p>
+	<% if not @equipment.transfers.empty? %>
+	<p>This item is <%= @equipment.active_transfer.in_or_with %>.</p>
+	<% end %> 
+	<%= link_to( "transfer!", {:controller=>"admin/transfers", :action => 'new', 'transfer[equipment_id]'=>@equipment.id,
+		'width'=>"600",
+		'height'=>"400"},
+	:title => "Transfering #{@equipment.name}", :class=>"thickbox"
+	      )
+	%>
+		
+	<p><label>Descripton</label><br /><%= h @equipment.description %></p>
+
+	<p><label>DANM #:</label> <%= h @equipment.inventory_identifier %></p>
+
+	<p class="manufacturer">
+	<label>Make:</label> <%= h @equipment.manufacturer  %><br />
+	<label>Model:</label> <%= h @equipment.model  %><br />
+	<label>Serial Number:</label> <%= h @equipment.serial_number  %></p>
+<% if @equipment.has_image? %>
+	<%= image_tag formatted_admin_equipment_path(@equipment, :jpg) %>
+<% end %>
+	<div class="bottomlinks">
+	<%= link_to 'Edit', :action => :edit, :id => @equipment %>
+	<%= link_to 'Delete', {:action => :destroy, :id => @equipment}, :confirm=>"Are you sure you want to kill\nthis lovely peice of equipment? \nIt will go away for ever.", :method => :delete %>
+	</div>
+</div>
+
+<div class="mainBlock">
+<% if not @equipment.transfers.empty? %>
+<%= render :partial => 'admin/equipment/transfers', :locals => {:transfers => @equipment.transfers} %>
+<% end %>
+</div>
+

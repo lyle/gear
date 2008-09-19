@@ -1,0 +1,38 @@
+<div class="mainBlock">
+
+<p>
+This equipment transfer was created
+by <b><%= @transfer.creator.name%></b> <span title="<%= @transfer.created_at%>"><%= time_ago_in_words(@transfer.created_at) %> ago</span> and last updated <span title="<%= @transfer.updated_at%>"><%= time_ago_in_words(@transfer.updated_at) %> ago</span>.
+</p>
+
+<p>This transfer has <%if not @transfer.confirmed? %>not yet<%end%> been confirmed. <br />
+(need to add confirmation button)
+</p>
+
+
+<br />
+<label>DANM# & Name</label>
+<p>
+  <%= @transfer.equipment.ident_n_name %> <%= link_to "show", :controller=>'admin/equipment', :action=>'show', :id=>@transfer.equipment %>
+</p>
+
+
+  <% if not @transfer.transfer_from.nil? %>
+<p>From: 
+  <%= @transfer.transfer_from_type %>: <%= @transfer.transfer_from.name %>
+</p>
+  <%end%>
+
+    <% if not @transfer.transfer_to.nil? %>
+  
+<p>To: 
+  <%= @transfer.transfer_to_type %>: <%= @transfer.transfer_to.name %>
+</p>
+
+  <%end%>
+
+<div class="bottomlinks">
+<%= link_to 'Edit', :action => 'edit', :id => @transfer %> |
+<%= link_to 'List', :action => 'list' %>
+</div>
+</div>

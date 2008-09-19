@@ -1,0 +1,32 @@
+<div class="mainBlock">
+
+<h1>Listing transfers</h1>
+
+
+<%= link_to 'New Equipment Transfer', :action => 'new' %>
+
+<table>
+  <tr>
+    <th>Equipment</th>
+    <th>From</th>
+    <th>To</th>
+    <th>Updated</th>
+    <th>Action</th>
+  </tr>
+  
+<% for transfer in @transfers %>
+  <tr class="<%= transfer.active? ? 'active' : 'inactive'%>">
+    <td><%=h transfer.equipment.ident_n_name%></td>
+    <td><% if transfer.transfer_from.nil? %>-----<%else%><%=h transfer.transfer_from.name %><%end%></td>
+    <td><% if transfer.transfer_to.nil? %>-----<%else%><%=h transfer.transfer_to.name %><%end%></td>
+    <td><%=h time_ago_in_words(transfer.updated_at) %> ago</td>
+    <td><%= link_to 'Show', :action => 'show', :id => transfer %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= will_paginate @transfers %>
+
+
+<br />
+</div>

@@ -1,0 +1,16 @@
+<div class="mainBlock">
+
+
+<h1>Editing transfer</h1>
+
+<% form_tag :action => 'update', :id => @transfer do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<% end %>
+
+
+<div class="bottomlinks">
+<%= link_to 'Show', :action => 'show', :id => @transfer %> |
+<%= link_to 'List', :action => 'list' %>
+</div>
+</div>

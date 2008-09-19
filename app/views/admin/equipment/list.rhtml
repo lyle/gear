@@ -1,0 +1,13 @@
+
+<div class="mainBlock">
+<div id="transfer_form" style="display:none;">ddd</div>
+
+<%=link_to('create equipment', {:action=>"new"}, {:class=>'create'}) %>
+
+<%= render :partial => 'admin/equipment/search_for_equipment', :locals => {:equipment => @items} %>
+
+
+<%= will_paginate @items %>
+
+
+</div>

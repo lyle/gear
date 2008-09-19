@@ -1,0 +1,28 @@
+<%= error_messages_for 'transfer' %>
+
+<!--[form:transfer]>
+<p><label for="transfer_created_at">Created at</label><br/>
+< datetime_select 'transfer', 'created_at'  ></p>
+
+<p><label for="transfer_updated_at">Updated at</label><br/>
+<  datetime_select 'transfer', 'updated_at'  ></p>
+[eoform:transfer]-->
+<p><label for="transfer_equipment_id">Equipment</lable><br />
+<%= collection_select(:transfer, :equipment_id, @equipment, :id, :ident_n_name , {:prompt => true})
+%>
+</p>
+
+<p><label for="transfer_transfer_to_person">Transfer To Person <%= radio_button("transfer", "transfer_to_type", "Person")
+%></lable><br />
+<%= collection_select(:transfer, 'transfer_to_person_id', @people, :id, :name, {:prompt => true})
+%>
+
+
+<p><label for="transfer_transfer_to_location">Transfer To Location <%= radio_button("transfer", "transfer_to_type", "Location")
+%></lable><br />
+<%= collection_select(:transfer, 'transfer_to_location_id', @locations, :id, :name, {:prompt => true})
+%>
+
+
+
+</p>

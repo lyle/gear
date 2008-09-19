@@ -1,0 +1,19 @@
+<div class="mainBlock">
+<h1>Listing groups</h1>
+
+
+<ul id="groups">
+<% for group in @groups %>
+  <li id="group_<%= group.id %>"><%=h group.name %> (<%=h group.people.size %> members) | <%= link_to 'Show', :controller=>"admin/groups", :action=>"show", :id=>group %></li>
+<% end %>
+</ul>
+<br />
+<p>You can re-sort these groups by dragging their names up and down. This order determines their order in the equipment "transfer to" window.</p>
+<%= sortable_element("groups", :url => { :action => "sort" }) %>
+
+
+
+<br />
+<%= link_to 'New group', new_admin_group_path %>
+
+</div>

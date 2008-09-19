@@ -1,0 +1,39 @@
+<div class="mainBlock">
+
+<h1>Editing group</h1>
+
+<% form_for([:admin,@group]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', ([:admin,@group]) %> |
+<%= link_to 'List', admin_groups_path %> |
+<%= link_to 'Destroy', ([:admin, @group]), :confirm => 'Are you sure?', :method => :delete %>
+
+<hr />
+<br />
+<hr />
+
+<h2>Import users from LDAP</h2>
+<p>Importing users from a group will create users in this system (unless they already exist) and assign those users to this group.</p>
+<h3>Current LDAP Groups</h3>
+<ul>
+<% @ldap_groups.each do |ldapgroup| %>
+    <li><%=ldapgroup.name%> (<%= ldapgroup.members.size %>) (<%= ldapgroup.cn %>) <%=ldapgroup.gidNumber%> 
+	<a href="/admin/groups/import_ldap_group/<%= @group.id %>/<%= ldapgroup.gidNumber %>">import</a>
+</li>
+<% end %>
+</ul>
+
+
+
+
+</div>

@@ -1,0 +1,51 @@
+<h1>Yo</h1>
+
+<div class="notice"><%= flash['notice'] %></div>
+
+<% @people.each do |person|%>
+    <%= person.login %> : <% if person%><%= person.ldap_uid %> <% end %><br />
+<% end %>
+
+
+<% @groups.each do |group| %>
+    <%=group.name%> (<%=group.id%>)
+    <ul>
+	    <ul>
+	    <% group.members.each do |user| %>
+	    <li><%=user.cn%> : <%=user.id%></li>
+	    <% end %>
+	    </ul>
+    <%group.attribute_names.each do |daname|%>
+      <li><%=daname%>:<%=group[daname]%></li>
+    <%end%>
+    </ul>
+<% end %>
+
+
+
+<% if false %>
+<%=@group.name%> (<%=@group.id%>)
+  <ul>
+	    <ul>
+	    <% @group.members.each do |user| %>
+	    <li><%=user.cn%> (<%=user.uid%>)</li>
+	    <% end %>
+	    </ul>
+  <% @group.attribute_names.each do |daname|%>
+    <li><%=daname%>:<%=@group[daname]%></li>
+  <% end %>
+  </ul>
+
+	
+<%end%>
+<hr>
+	<h1>Users</h1>
+	<% @users.each do |user| %>
+	    <%=user.name%> (<%=user.id%>) <%= user.mail %>
+	   <ul>
+	    <% user.groups.each do |group| %>
+	      <li><%=group.name%> (<%=group.id%>)</li>
+	    <% end %>
+	    </ul>
+    
+	<% end %>

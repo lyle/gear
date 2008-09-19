@@ -1,0 +1,31 @@
+<%= error_messages_for 'equipment' %>
+
+<!--[form:model_name]-->
+<p class="notes"><label for="equipment_notes">Notes</label><br/>
+<%= f.text_area :notes, :cols => 30, :rows => 30  %></p>
+
+<p><label for="equipment_name">Name</label><br/>
+<%= f.text_field 'equipment', 'name'  %></p>
+
+<p><label for="equipment_description">Description</label><br/>
+<%= f.text_area 'equipment', 'description',:cols => 28, :rows => 10    %></p>
+
+<p><label for="equipment_inventory_identifier">DANM SN</label><br/>
+<%= f.text_field 'equipment', 'inventory_identifier'  %></p>
+
+<p class="manufacturer"><label for="equipment_manufacturer">Manufacturer</label><br/>
+<%= f.text_field 'equipment', 'manufacturer'  %><br />
+<label for="equipment_model">Model</label><br/>
+<%= f.text_field 'equipment', 'model'  %><br />
+<label for="equipment_serial_number">Serial Number</label><br/>
+<%= f.text_field 'equipment', 'serial_number'  %></p>
+
+
+<p>
+  <b>Upload Image</b><br />
+  <%= f.file_field :image_file %><br />
+  or URL: <%= f.text_field :image_file_url %>
+</p>
+
+
+<!--[eoform:model_name]-->

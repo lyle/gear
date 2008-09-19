@@ -1,0 +1,21 @@
+<%= form_tag({:action=> "live_search"}, { :onSubmit => "Element.show('spinner');" }) %>
+
+<table>
+<tr>
+<td><label for="searchtext"><font size="1"><b>Live Gear Search:</b></font></label></td>
+<td><%= text_field_tag :searchtext %></td>
+<td><img alt="spinner" id="spinner" src="http://dev.backcountrymaps.com/images/spinner.gif" style="display:none;" /></td>
+</tr>
+</table>
+</form>
+
+<%= observe_field(:searchtext,
+                 :frequency => 0.5,
+		 :with => 'searchtext',
+                 :update => :search_hits,
+                 :loading => "Element.show('spinner')",
+                 :complete => "Element.hide('spinner')",
+                 :url => { :action => :live_search, :controller => 'equipment' }) %>
+
+<div id="search_hits"><% if equipment %><table><%= render :partial => 'equipment/item', :collection => equipment, :locals => {:show_children=>false} %>
+</table><% end%></div>

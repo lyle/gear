@@ -1,0 +1,28 @@
+
+<% for column in Location.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @location.send(column.name) %>
+</p>
+<% end %>
+
+This room has the following items:
+<ul>
+<% @location.items.each do |item| %>
+<li><%= item.ident_n_name %></li>
+<% end %>
+</ul>
+
+At one time it did have these:
+<ul>
+<% @location.recived_transfers.each do |transfer| %>
+<% if not transfer.active? %>
+<li><%= transfer.equipment.ident_n_name %> <%=transfer.created_at%></li>
+<% end %>
+<% end %>
+</ul>
+
+
+<div class="bottomlinks">
+<%= link_to 'Edit', :action => 'edit', :id => @location %> |
+<%= link_to 'List', :action => 'list' %>
+</div>

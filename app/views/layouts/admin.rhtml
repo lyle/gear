@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <title>GEAR Adminstration</title>
+ <%= javascript_include_tag :defaults %>
+ <%= javascript_include_tag 'jquery-1.2.6.min' %>
+ <%= javascript_include_tag 'thickbox' %>
+ <%= javascript_include_tag 'transfer' %>
+ <%= stylesheet_link_tag 'admin' %>
+ <%= stylesheet_link_tag 'thickbox' %>
+<script>
+	
+	jQuery.noConflict();
+	
+</script>
+ 
+</head>
+<body class="<%= controller.controller_name %>">
+<div id="header">
+	<a href="/" style="float:right;padding-right:.5em;">home</a>
+<ul id="nav">
+	<li class="equipment"><%= link_to "Equipment", :controller => "admin/equipment" %></li>
+	<li class="transfers"><%= link_to "Transfers", :controller => "admin/transfers" %></li>
+	<li class="locations"><%= link_to "Locations", :controller => "admin/locations" %></li>
+	<li class="people"><%= link_to "People", :controller => "admin/people" %></li>
+	<li class="groups"><%= link_to "Groups", :controller => "admin/groups" %></li>
+	
+</ul>
+<br class="textonly"/>
+</div>
+<div id="content">
+<p style="color: green;position:absolute;background-color:white;" id="feedback"><%= flash[:notice] %></p>
+
+
+<%= yield  %>
+</div>
+</body>
+</html>

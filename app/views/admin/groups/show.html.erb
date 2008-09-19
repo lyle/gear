@@ -1,0 +1,20 @@
+<div class="mainBlock">
+<h2>Viewing Group: <%=h @group.name %></h2>
+
+<h3>Currently Assigned People</h3>
+<ul>
+<% for person in @group.people %>
+<li><%= link_to person.name, admin_person_path(person)%></li>
+<% end %>
+</ul>
+
+<br />
+<hr />
+
+<br />
+<%= link_to 'Edit', edit_admin_group_path(@group) %> |
+<%= link_to 'Back', admin_groups_path %>
+
+
+
+</div>

@@ -1,0 +1,971 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+nikoncam:
+   id: 1
+   name: Nikon D50
+   description: A SLR camera with three lenses.
+   inventory_identifier: 420045
+   manufacturer: Nikon
+   model: D50
+   serial_number: NKF3299JG
+   status: active
+   notes: 
+   parent_id:
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-26 23:30:01
+   children_count: 4
+scandisk:
+   id: 2
+   name: 4GB SD Card (1)
+   description: SD Memory Card for Nikon D50 Camera
+   inventory_identifier: 
+   manufacturer: ScanDisk
+   model: 4GBxSD Extended
+   serial_number: 
+   status: Active
+   notes: 
+   parent_id: 1
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-26 23:30:01
+   children_count:
+scandisk2:
+   id: 3
+   name: 4GB SD Card (2)
+   description: SD Memory Card for Nikon D50 Camera
+   inventory_identifier: 
+   manufacturer: ScanDisk
+   model: 4GBxSD Extended
+   serial_number: 
+   status: Active
+   notes: 
+   parent_id: 1
+   created_by: 1
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-26 23:30:01
+   children_count:
+lense:
+   id: 4
+   name: Nikar 60mm Lense
+   description: "For Nikon SLR cameras this 60mm 2.8F lenses has macro 1:1"
+   inventory_identifier: 420049
+   manufacturer: Nikkar
+   model: 60mm 2.8F
+   serial_number: NK9382i928
+   status: Active
+   notes: 
+   parent_id: 1
+   created_by: 2
+   created_at: 2007-10-26 23:30:01
+   updated_at: 2007-10-26 23:30:01
+   children_count:
+videocamera1:
+   id: 5
+   name: Video Camera - Squall
+   description: Video Camera Kit, power adapter, battery, USB, Headphones, firewire cable and case.
+   inventory_identifier: 420102
+   manufacturer: Panasonic
+   model: PV-AS150
+   serial_number: 
+   status: Active
+   notes:
+   parent_id: 
+   created_by: 1
+   created_at: 2007-10-28 22:03:30
+   updated_at:
+   children_count:
+videocamera2:
+   id: 6
+   name: Video Camera - Twister
+   description: Video Camera Kit, power adapter, battery, USB, Headphones, firewire cable and case.
+   inventory_identifier: 420108
+   manufacturer: Panasonic
+   model: PV-AS150
+   serial_number: 
+   status: Active
+   notes:
+   parent_id: 
+   created_by: 1
+   created_at: 2007-10-21 22:03:30
+   updated_at:
+   children_count:
+videocamera3:
+   id: 7
+   name: Video Camera - Breeze
+   description: Video Camera Kit, power adapter, battery, USB, Headphones, firewire cable and case.
+   inventory_identifier: 420083
+   manufacturer: Panasonic
+   model: PV-AS150
+   serial_number: 
+   status: Active
+   notes:
+   parent_id: 
+   created_by: 1
+   created_at: 2007-10-10 22:03:30
+   updated_at: 
+   children_count: 
+projector1:
+   id: 8
+   name: Projector 1
+   description: Projector 1600 Lumens, 800x600 resolution, Special DVI-VGA+USB cable, power cord, Remote Control, 3x RCA to RCA and case.
+   inventory_identifier: 420138
+   manufacturer: InFocus
+   model: X2 DLP
+   serial_number: 
+   status: Active
+   notes:
+   parent_id: 
+   created_by: 1
+   created_at: 2007-10-10 22:03:30
+   updated_at: 
+   children_count:
+DANMProjector2_420063:
+   id: 9
+   name: DANM Projector 2
+   description: Projector 1600 Lumens, 800x600 resolution, Special DVI-VGA+USB cable, power cord, Remote Control, 3x RCA to RCA and case.
+   inventory_identifier: 420063
+   manufacturer: InFocus
+   model: X2 DLP
+   created_by: 1
+   status: Active
+DANMProjector3_420064:
+   name: DANM Projector 3
+   description: InFocus X2 DLP Projector 1600 Lumens 800x600 resolution in Porter D-120 (fall 2006)
+   inventory_identifier: 420064
+   manufacturer: InFocus
+   model: X2
+   status: Active
+ShureSM63Microphone_420087:
+   name: Shure SM63 Microphone
+   description: Short silver mic with white screen. With Remote control.
+   inventory_identifier: 420087
+   manufacturer: SHURE
+   model: SM63
+MarentzSolidStateRecorder_420067:
+   name: Marentz Solid State Recorder
+   description: with power adaptor and cord for power adaptor
+   inventory_identifier: 420067
+   manufacturer: MARANTZ
+   model: PMD660
+2GBCompactFlashCard/Reg_420069:
+   name: 2GB Compact Flash Card/Reg
+   description: 
+   inventory_identifier: 420069
+   manufacturer: SANDISK
+   model: SDCFB2048A10
+1GBCompactFlashCard/Reg_420088:
+   name: 1GB Compact Flash Card/Reg
+   description: 
+   inventory_identifier: 420088
+   manufacturer: SANDISK
+   model: SDCFB1024A10
+MarentzSolidStateRecorder_420089:
+   name: Marentz Solid State Recorder
+   description: with power adaptor and cord for power adaptor
+   inventory_identifier: 420089
+   manufacturer: MARANTZ
+   model: PMD660
+StereoCONDENSERMICROPHONE/REG_420098:
+   name: Stereo CONDENSER MICROPHONE/REG
+   description: Portable Audio and DV Deck A stereo microphone with a AA battery.
+   inventory_identifier: 420098
+   manufacturer: AUDIO-TECHNICA
+   model: AT825
+MarantzSolidStateRecorder_420084:
+   name: Marantz Solid State Recorder
+   description: with power adaptor and cord for power adaptor
+   inventory_identifier: 420084
+   manufacturer: MARANTZ
+   model: PMD660
+MarentzSolidStateRecorder_420085:
+   name: Marentz Solid State Recorder
+   description: with power adaptor and cord for power adaptor, microphone,  and box
+   inventory_identifier: 420085
+   manufacturer: MARANTZ
+   model: PMD660
+SHUREOMNIDYNAMICMIC_420099:
+   name: SHURE OMNI DYNAMIC MIC
+   description: Portable Audio and DVDeck Short silver mic with white screen. 
+   inventory_identifier: 420099
+   manufacturer: SHURE
+   model: SM63
+2GBCompactFlashCard/Reg_420097:
+   name: 2GB Compact Flash Card/Reg
+   description: 
+   inventory_identifier: 420097
+   manufacturer: SANDISK
+   model: SDCFB2048A10
+BatteryChargerand4AAA_420118:
+   name: Battery Charger and 4AAA
+   description: Rapid Charger Ni-Mh / NiCD Batteries Input 110V/220V 
+   inventory_identifier: 420118
+   manufacturer: Power2000
+   model: XP-333
+G5Computer_420006:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420006
+   manufacturer: MAC
+   model: 
+G5Computer_420007:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420007
+   manufacturer: 
+   model: 
+M-AudioFireWireSolo_420009:
+   name: M-Audio FireWire Solo
+   description: Video and Audio Equipment Warburton
+   inventory_identifier: 420009
+   manufacturer: M-Audio
+   model: FireWire 410
+CinemaDisplay20ÓWidescreen_420010:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420010
+   manufacturer: MAC
+   model: 
+CinemaDisplay20ÓWidescreen_420011:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420011
+   manufacturer: MAC
+   model: 
+17ÓLCDSyncMaster_420012:
+   name: 17Ó LCD SyncMaster
+   description: 710V Samsung 17 LCD SyncMaster 710V Monitors
+   inventory_identifier: 420012
+   manufacturer: Samsung
+   model: 
+17ÓLCDSyncMaster_420013:
+   name: 17Ó LCD SyncMaster
+   description: 710V Samsung 17 LCD SyncMaster 710V Monitors
+   inventory_identifier: 420013
+   manufacturer: Samsung
+   model: 
+MotorMix_420014:
+   name: Motor Mix
+   description: 
+   inventory_identifier: 420014
+   manufacturer: 
+   model: 
+ColorCCTV_420015:
+   name: Color CCTV
+   description: 
+   inventory_identifier: 420015
+   manufacturer: PANASONIC
+   model: WV-CP480
+ColorCCTV_420016:
+   name: Color CCTV 
+   description: 
+   inventory_identifier: 420016
+   manufacturer: PANASONIC
+   model: 
+Yamaha4busAudioMixer_420051:
+   name: Yamaha 4 bus Audio Mixer
+   description: Video and Audio equipment Warburton
+   inventory_identifier: 420051
+   manufacturer: Yamaha
+   model: NG12/4Fx
+TwinPact100/REG_420005:
+   name: TwinPact 100/REG
+   description: Portable Audio and DV Deck
+   inventory_identifier: 420005
+   manufacturer: CANOPUS
+   model: TWINPACT100
+AudioandDVDeck_420004:
+   name: Audio and DV Deck
+   description: Portable Audio and DV Deck
+   inventory_identifier: 420004
+   manufacturer: PANASONIC
+   model: AG-DV2500P
+EN200/N*5.6ÓColorTFT_420003:
+   name: EN200/N* 5.6Ó Color TFT
+   description: LCD monitor
+   inventory_identifier: 420003
+   manufacturer: EN200
+   model: EN200NZ-01
+DataVideoAudio/VideoDistributionAmplifierVP-299_420065:
+   name: DataVideo Audio/Video Distribution Amplifier VP-299
+   description: 
+   inventory_identifier: 420065
+   manufacturer: Datavideo
+   model: 
+CinemaDisplay20ÓWidescreen_420066:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor Po# P0242941
+   inventory_identifier: 420066
+   manufacturer: MAC
+   model: 
+ETSPV902VIDEO/AUDIOBaluns_420070:
+   name: ETS PV902 VIDEO/AUDIO Baluns
+   description: Converts and Transmits full video and two audio channels over a single four-pair UTP run.
+   inventory_identifier: 420070
+   manufacturer: ETS
+   model: PV902
+G5Computer_420000:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420000
+   manufacturer: 
+   model: 
+CinemaDisplay20ÓWidescreen_420002:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420002
+   manufacturer: MAC
+   model: 
+G5Computer_420001:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420001
+   manufacturer: 
+   model: 
+CinemaDisplay20ÓWidescreen_420068:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420068
+   manufacturer: MAC
+   model: 
+CinemaDisplay20ÓWidescreen_420086:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420086
+   manufacturer: MAC
+   model: 
+3CCDCam_420083:
+   name: 3CCD Cam
+   description: 
+   inventory_identifier: 420083
+   manufacturer: PANASONIC
+   model: PV-AS150
+MarentzSolidStateRecorder_420084:
+   name: Marentz Solid State Recorder 
+   description: with power adaptor and cord for power adaptor
+   inventory_identifier: 420084
+   manufacturer: MARANTZ
+   model: PMD660
+RollsMX422_420082:
+   name: Rolls MX422
+   description: Portable/Field Mixer
+   inventory_identifier: 420082
+   manufacturer: 
+   model: 
+TRENDnet_420100:
+   name: TRENDnet 
+   description: Gigabit Switch
+   inventory_identifier: 420100
+   manufacturer: 
+   model: TEG-SS0TXE
+TRENDnet_420101:
+   name: TRENDnet 
+   description: Gigabit Switch
+   inventory_identifier: 420101
+   manufacturer: 
+   model: TEG-SS0TXE
+EDIROLV-4VideoMixer_420053:
+   name: EDIROL V-4 Video Mixer
+   description: Video and Audio equipment
+   inventory_identifier: 420053
+   manufacturer: Edirol
+   model: 
+USBMIDIinterface8x8_420054:
+   name: USB MIDI interface 8x8
+   description: Video and Audio equipment Warburton 
+   inventory_identifier: 420054
+   manufacturer: M-Audio
+   model: USB MIDISPORT 8x8/S
+MackieSRM350Speakers_420055:
+   name: Mackie SRM 350 Speakers
+   description: Video and Audio equipment Warburton
+   inventory_identifier: 420055
+   manufacturer: Mackie
+   model: SRM350
+MackieSRM350Speakers_420056:
+   name: Mackie SRM 350 Speakers
+   description: Video and Audio equipment Warburton
+   inventory_identifier: 420056
+   manufacturer: Mackie
+   model: SRM350
+MackieSRM350Speakers_420057:
+   name: Mackie SRM 350 Speakers
+   description: Video and Audio equipment Warburton
+   inventory_identifier: 420057
+   manufacturer: Mackie
+   model: SRM350
+MackieSRM350Speakers_420058:
+   name: Mackie SRM 350 Speakers
+   description: Video and Audio equipment Warburton
+   inventory_identifier: 420058
+   manufacturer: Mackie
+   model: SRM350
+FryÕsComputer_420059:
+   name: FryÕs Computer
+   description: 
+   inventory_identifier: 420059
+   manufacturer: 
+   model: FM7850
+CinemaDisplay20ÓWidescreen_420062:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420062
+   manufacturer: MAC
+   model: 
+AirportExtreme_420060:
+   name: Airport Extreme
+   description: Wireless Extension
+   inventory_identifier: 420060
+   manufacturer: 
+   model: 
+UHFTransmitter10BT_420090:
+   name: UHF Transmitter 10BT
+   description: 
+   inventory_identifier: 420090
+   manufacturer: AZDEN
+   model: 
+UHFReceiver100UPR_420091:
+   name: UHF Receiver 100UPR
+   description: 
+   inventory_identifier: 420091
+   manufacturer: AZDEN
+   model: 
+G5Computer_420092:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420092
+   manufacturer: MAC
+   model: 
+CinemaDisplay20ÓWidescreen_420093:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor 
+   inventory_identifier: 420093
+   manufacturer: MAC
+   model: M9177LL/A
+CinemaDisplay20ÓWidescreen_420094:
+   name: Cinema Display 20Ó Widescreen
+   description: Monitor
+   inventory_identifier: 420094
+   manufacturer: MAC
+   model: 
+MACMini_420095:
+   name: MAC Mini
+   description: Computer G4 1.6 GHZ
+   inventory_identifier: 420095
+   manufacturer: MAC
+   model: 
+Microphone_420096:
+   name: Microphone
+   description: Shotgun Mic
+   inventory_identifier: 420096
+   manufacturer: Azden
+   model: 
+VideoView_420113:
+   name: VideoView
+   description: 2 Port VGA Video Splitter
+   inventory_identifier: 420113
+   manufacturer: startech.com
+   model: ST122
+SanyoPLC-XT16_420112:
+   name: Sanyo PLC-XT16
+   description: Multimedia Projector
+   inventory_identifier: 420112
+   manufacturer: Sanyo
+   model: PLC-Xt16
+VGASRExtend-It_420109:
+   name: VGA SR Extend- It
+   description: VGA-CATS extender with power. Two silver boxes connected with CAT 5 with blue power 5VDC supply (wall-wart) extend-it sender and extend-it receiver.
+   inventory_identifier: 420109
+   manufacturer: Gefen
+   model: 
+MacMiniIntel_Almond_420110:
+   name: Mac Mini Intel (Almond)
+   description: "Intel Core Duo 1.66 GHZ, 512MB, 60GB Airport ID: 00:16:cb:08:87:fb Ethernet ID: 00:16:cb:94:1b:c9"
+   inventory_identifier: 420110
+   manufacturer: Apple
+   model: 
+SanyoPLC-XP55Projector_420111:
+   name: Sanyo PLC-XP55 Projector
+   description: Projector
+   inventory_identifier: 420111
+   manufacturer: Sanyo
+   model: PLC-XP55
+VGAAmp/Splitter_420107:
+   name: VGA Amp/Splitter
+   description: Multiple and simultaneous video broadcast up to 2 different locations
+   inventory_identifier: 420107
+   manufacturer: VGA
+   model: 
+PanasonicVideoCamera_420108:
+   name: Panasonic Video Camera
+   description: 
+   inventory_identifier: 420108
+   manufacturer: Panasonic
+   model: 
+VideoView_420106:
+   name: VideoView
+   description: 2 Port VGA video splitter Comes with power cord
+   inventory_identifier: 420106
+   manufacturer: startech.com
+   model: ST122
+EtsBalun_420075:
+   name: Ets Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420075
+   manufacturer: ETS
+   model: PV902
+ETSBalun_420072:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420072
+   manufacturer: ETS
+   model: PV902
+ETSBalun_420078:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420078
+   manufacturer: ETS
+   model: PV902
+ETSBalun_420074:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420074
+   manufacturer: ETS
+   model: PV902
+ETSBalun_420079:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420079
+   manufacturer: ETS
+   model: PV902
+CELABSAV400SV_420115:
+   name: CE LABS AV400SV
+   description: High performance audio and video with S video Distribution amplifier True one to one ration, Four output
+   inventory_identifier: 420115
+   manufacturer: CE LABS
+   model: AV400SV
+G5Computer_420080:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420080
+   manufacturer: Apple
+   model: DAMN performance 1
+ETSBalun_420076:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420076
+   manufacturer: ETS
+   model: PV902
+M-AudioFirewire410_420116:
+   name: M-Audio Firewire 410
+   description: Firewire compatible 4-in / 10-out ASIO 2 Compliant Mixer and software control panel two headphone outs
+   inventory_identifier: 420116
+   manufacturer: M-AUDIO
+   model: Firewire 410
+G5Computer_420117:
+   name: G5 Computer
+   description: Computer PMG5 2GHZ DC/512MB/160GB/16X DL SD/GF6600LE
+   inventory_identifier: 420117
+   manufacturer: 
+   model: 
+HeadAmp_420119:
+   name: Head Amp
+   description: Four output stereo headphone amp  artproaudio.com
+   inventory_identifier: 420119
+   manufacturer: Artcessories
+   model: 
+20inchwidescreenMonitor_420120:
+   name: 20 inch widescreen Monitor
+   description: 
+   inventory_identifier: 420120
+   manufacturer: Apple
+   model: 
+Prosafe8PortGigabitSwitch_420121:
+   name: Prosafe 8 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420121
+   manufacturer: Netgear
+   model: GS108 v2
+Prosafe8PortGigabitSwitch_420122:
+   name: Prosafe 8 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420122
+   manufacturer: Netgear
+   model: GS108 v2
+Prosafe16PortGigabitSwitch_420123:
+   name: Prosafe 16 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420123
+   manufacturer: Netgear
+   model: GS116
+Prosafe16PortGigabitSwitch_420124:
+   name: Prosafe 16 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420124
+   manufacturer: Netgear
+   model: GS116
+TouchScreenMonitor_420125:
+   name: Touch Screen Monitor
+   description: 17" touch screen monitor
+   inventory_identifier: 420125
+   manufacturer: Elo
+   model: ET1715L8CWA-1-a
+MacMiniPPC_Cashew_420130:
+   name: Mac Mini PPC (Cashew)
+   description: "Intel Core Duo 1.83 GHZ, 1GB, 80GB ethernet ID- 00:16:cb:a7:e0:bd airport ID- 00:17:f2:50:df:30 (originally named Noyce)"
+   inventory_identifier: 420130
+   manufacturer: Apple
+   model: Mini
+ATM650_420126:
+   name: ATM650
+   description: Hypercardoid Dynamic instrument microphone
+   inventory_identifier: 420126
+   manufacturer: Audio-Technica
+   model: 
+ATM650_420129:
+   name: ATM650
+   description: Hypercardoid Dynamic instrument microphone
+   inventory_identifier: 420129
+   manufacturer: Audio-Technica
+   model: 
+StudioPreceisionMonitorSystem_420127:
+   name: Studio Preceision Monitor System
+   description: Studeio Preceision Biamplified Direct Field Monitor Event ASP 120V
+   inventory_identifier: 420127
+   manufacturer: Event Electronics
+   model: 
+StudioPreceisionMonitorSystem_420128:
+   name: Studio Preceision Monitor System
+   description: Studeio Preceision Biamplified Direct Field Monitor Event ASP 120V
+   inventory_identifier: 420128
+   manufacturer: Event Electronics
+   model: 
+ATM650_420131:
+   name: ATM650
+   description: Hypercardoid Dynamic instrument microphone
+   inventory_identifier: 420131
+   manufacturer: Audio-Technica
+   model: 
+ETSBalun_420077:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420077
+   manufacturer: ETS
+   model: PV902
+ETSBalun_420071:
+   name: ETS Balun
+   description: Converts and transmits full video and two audio channels over a single four pair UTP run
+   inventory_identifier: 420071
+   manufacturer: ETS
+   model: PV902
+17"LCD_420104:
+   name: 17" LCD
+   description: WRITE MORE HERE
+   inventory_identifier: 420104
+   manufacturer: 
+   model: 
+HPPrinter_420132:
+   name: HP Printer
+   description: LaserJet 1020
+   inventory_identifier: 420132
+   manufacturer: HP
+   model: 1020
+ViewSonicLCDProjector_Timmy_420133:
+   name: ViewSonic LCD Projector (Timmy)
+   description: "Comes With: Remote Control 4 Power Cords Needs/ comes with 2 AA batteries"
+   inventory_identifier: 420133
+   manufacturer: ViewSonic
+   model: PJ452 XGA
+AVSelector_420139:
+   name: AV Selector
+   description: 4 inputs 1 output
+   inventory_identifier: 420139
+   manufacturer: Sony
+   model: SB-V40
+S-VideoSwitch_420140:
+   name: S-Video Switch
+   description: 
+   inventory_identifier: 420140
+   manufacturer: Terk
+   model: VS-4
+MultiMix8Firewire_420141:
+   name: MultiMix8 Firewire
+   description: "Comes with: Microphone (420142) + Cord + Stand Headphones Firewire Cable Power Cord"
+   inventory_identifier: 420141
+   manufacturer: Alesis
+   model: 
+Microphone_420142:
+   name: Microphone
+   description: AM1
+   inventory_identifier: 420142
+   manufacturer: Alesis
+   model: 
+VGAExtender_420143:
+   name: VGA Extender
+   description: VGA-CATS extender with power. Two silver boxes connected with CAT 5 with blue power 5VDC supply (wall-wart) extend-it sender and extend-it receiver.
+   inventory_identifier: 420143
+   manufacturer: Gefen
+   model: 
+Projector_420138:
+   name: Projector
+   description: In Focus X2 DLP Projector 1600 Lumens 800x600 resolution
+   inventory_identifier: 420138
+   manufacturer: InFocus
+   model: 
+PANASONICAG-DV2500P_420135:
+   name: PANASONIC AG-DV2500P
+   description: 
+   inventory_identifier: 420135
+   manufacturer: 
+   model: 
+CANOPUSTWINPACT100_420136:
+   name: CANOPUS TWINPACT100
+   description: 
+   inventory_identifier: 420136
+   manufacturer: 
+   model: 
+Monitor_420137:
+   name: Monitor
+   description: Color TFT LCD Monitor EN200/N*
+   inventory_identifier: 420137
+   manufacturer: 
+   model: 
+Moggridge15"PowerBookG4_420144:
+   name: Moggridge 15" PowerBook G4
+   description: "Name: Moggridge Ethernet ID: 00:0d:93:b4:2e:60  Airport ID: 00:0d:93:7d:f0:ac"
+   inventory_identifier: 420144
+   manufacturer: Apple
+   model: G4
+8PortGigabitSwitch_420145:
+   name: 8 Port Gigabit Switch
+   description: Asante FriendlyNET GX5-800P 8 Port Gigabit Ethernet Workgroup Switch
+   inventory_identifier: 420145
+   manufacturer: Asante
+   model: GX5-800P
+MIDISport1x1_midiman_420147:
+   name: MIDI Sport 1x1 (midiman)
+   description: MIDI Sport 1x1 MIDI to USB
+   inventory_identifier: 420147
+   manufacturer: M-Audio
+   model: 
+MIDISport1x1_midiman_420148:
+   name: MIDI Sport 1x1 (midiman)
+   description: MIDI Sport 1x1 MIDI to USB
+   inventory_identifier: 420148
+   manufacturer: M-Audio
+   model: 
+AirportExpressBaseStation_420149:
+   name: Airport Express Base Station
+   description: "Ethernet: 0019e3e45c60 AirPort: 0019e3e45c61 Put in Porter D212"
+   inventory_identifier: 420149
+   manufacturer: Apple
+   model: 
+AirportExpressBaseStation_420150:
+   name: Airport Express Base Station
+   description: "Ethernet ID: 0016CBC3FB13 Airport ID: 0019E3FB0C4A"
+   inventory_identifier: 420150
+   manufacturer: Apple
+   model: 
+AirportExpressBaseStation_420151:
+   name: Airport Express Base Station
+   description: "Ethernet ID: 0016CBC3FB87 Airport ID: 0019E3FB5903"
+   inventory_identifier: 420151
+   manufacturer: Apple
+   model: 
+SolderingStation_420152:
+   name: Soldering Station
+   description: Temperature Controlled soldering and de soldering station
+   inventory_identifier: 420152
+   manufacturer: xy tronic
+   model: 
+DCpowersupply_420153:
+   name: DC power supply
+   description: 
+   inventory_identifier: 420153
+   manufacturer: Mastech
+   model: HY3003D
+CeilingMount_420154:
+   name: Ceiling Mount
+   description: RPA series LCD/ DLP ceiling mount Max Weight Capacity = 50 LBs
+   inventory_identifier: 420154
+   manufacturer: RPA Series
+   model: 
+multiverseprojector_420155:
+   name: multiverse projector
+   description: 
+   inventory_identifier: 420155
+   manufacturer: sanyo
+   model: proxtrax PLC-XP57L
+Tripod_420156:
+   name: Tripod
+   description: 3 leg tripod
+   inventory_identifier: 420156
+   manufacturer: manfrotto
+   model: 3130
+Camerakit4_420159:
+   name: Camera kit 4
+   description: 420157- lens 420158- lens
+   inventory_identifier: 420159
+   manufacturer: 
+   model: 
+23InchWidescreenDisplayMonitor_420160:
+   name: 23 Inch Widescreen Display Monitor
+   description: 
+   inventory_identifier: 420160
+   manufacturer: Apple
+   model: 
+Speaker_420161:
+   name: Speaker
+   description: 
+   inventory_identifier: 420161
+   manufacturer: M-AUDIO
+   model: STUDIOPHILE DX4
+Speaker_420162:
+   name: Speaker
+   description: 
+   inventory_identifier: 420162
+   manufacturer: M-AUDIO
+   model: STUDIOPHILE DX4
+LightStand_420163:
+   name: Light Stand
+   description: 
+   inventory_identifier: 420163
+   manufacturer: Manfrotto
+   model: 5051BAC
+LightStand_420164:
+   name: Light Stand
+   description: 
+   inventory_identifier: 420164
+   manufacturer: Manfrotto
+   model: 5051BAC
+PowerMacG4_420166:
+   name: Power Mac G4
+   description: 
+   inventory_identifier: 420166
+   manufacturer: Apple
+   model: 
+PowerMacG4_420165:
+   name: Power Mac G4
+   description: 
+   inventory_identifier: 420165
+   manufacturer: Apple
+   model: 
+PowerMacG5_420169:
+   name: Power Mac G5
+   description: "ETHERNET ID: 000A95C2C192"
+   inventory_identifier: 420169
+   manufacturer: Apple
+   model: 
+POWERMACG5_420170:
+   name: POWER MAC G5
+   description: "ETHERNET ID: 000A95D4BB30"
+   inventory_identifier: 420170
+   manufacturer: APPLE
+   model: 
+POWERMACG5_420171:
+   name: POWER MAC G5
+   description: "ETHERNET ID: 000D93AFF32C"
+   inventory_identifier: 420171
+   manufacturer: APPLE
+   model: 
+POWERMACG5_420172:
+   name: POWER MAC G5
+   description: "BAD OPTICAL  ETHERNET ID:000D932CBAAY"
+   inventory_identifier: 420172
+   manufacturer: APPLE
+   model: 
+5PortGigabitSwitch_420174:
+   name: 5 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420174
+   manufacturer: Netgear
+   model: GS105
+5PortGigabitSwitch_420175:
+   name: 5 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420175
+   manufacturer: Netgear
+   model: GS105
+Prosafe8PortGigabitSwitch_420177:
+   name: Prosafe 8 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420177
+   manufacturer: Netgear
+   model: GS108 v2
+Prosafe8PortGigabitSwitch_420178:
+   name: Prosafe 8 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420178
+   manufacturer: Netgear
+   model: GS108 v2
+5PortGigabitSwitch_420179:
+   name: 5 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420179
+   manufacturer: Netgear
+   model: GS105
+5PortGigabitSwitch_420180:
+   name: 5 Port Gigabit Switch
+   description: 
+   inventory_identifier: 420180
+   manufacturer: Netgear
+   model: GS105
+LogitechX-5305.1SurroundSoundSystem_420181:
+   name: Logitech X-530 5.1 Surround Sound System
+   description: Currently installed in kitchen
+   inventory_identifier: 420181
+   manufacturer: 
+   model: 
+LogitechX-2302.1SoundSystem_420182:
+   name: Logitech X-230 2.1 Sound System
+   description: 
+   inventory_identifier: 420182
+   manufacturer: 
+   model: 
+Azden10BTWirelessLavMicTransmitter_420183:
+   name: Azden 10BT Wireless Lav Mic Transmitter
+   description: Currently set to Group 0, Channel 1
+   inventory_identifier: 420183
+   manufacturer: Azden
+   model: 10BT
+Azden100UPRWirelessReciever_420184:
+   name: Azden 100UPR Wireless Reciever
+   description: Currently set to Group 0, Channel 1
+   inventory_identifier: 420184
+   manufacturer: Azden
+   model: 100UPR
+CanonDigitalRebelXTi_420185:
+   name: Canon Digital Rebel XTi
+   description: "Includes: Lens Cap 4 GB SanDisk CompactFlash Card USB Cable 1/8 mono -> composite cable Canon UV Haze Filter (58mm) Battery Charger and Battery (not an extra battery)"
+   inventory_identifier: 420185
+   manufacturer: Canon
+   model: Digital Rebel XTi
+RollsMX41bStereoPassiveMixer_420186:
+   name: Rolls MX41b Stereo Passive Mixer
+   description: Also usable as a 4 to 1 audio signal splitter, if all sliders are all the way up.
+   inventory_identifier: 420186
+   manufacturer: Rolls
+   model: MX41b
+BoteroCollapsible5'x7'Black/WhiteBackdrop_420187:
+   name: Botero Collapsible 5'x7' Black/White Backdrop
+   description: 
+   inventory_identifier: 420187
+   manufacturer: 
+   model: 
+SamsonWirelessLavTransmitter_420188:
+   name: Samson Wireless Lav Transmitter
+   description: UHF Beltpack Transmitter Ch U6 Includes Element, Windscreen, Clip, miniXLR - XLR
+   inventory_identifier: 420188
+   manufacturer: 
+   model: 
+SamsonWirelessLavReciever_420189:
+   name: Samson Wireless Lav Reciever
+   description: UM1 Micro Diversity Reviever 800 MHz, Ch U6
+   inventory_identifier: 420189
+   manufacturer: 
+   model: 
+WiiRemoteandNunchuckController_420193:
+   name: Wii Remote and Nunchuck Controller
+   description: 
+   inventory_identifier: 420193
+   manufacturer: 
+   model: 

@@ -1,0 +1,18 @@
+@equipment.operate do |image|
+	image.resize '180x180', :padding => "#fff"
+	if @equipment.inventory_identifier 
+	    image.text("DANM#:#{@equipment.inventory_identifier}",
+	      :alignment => :top_right,
+	      :offset => '2x2',
+	      :antialias => true,
+	      :color => '#ff0000',
+	      :font_size => 12,
+	      :font => 'lib/fonts/Arial.ttf',
+	      :rotate => 0,
+	      :shadow => {
+	        :blur => 1,
+	        :opacity => 0.5,
+	      }
+	    )
+	end
+end

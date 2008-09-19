@@ -1,0 +1,26 @@
+
+
+<tr>
+    <td><%=item.inventory_identifier%>
+    <td><%= link_to item.name, :action=>'show', :id=>item %></td>
+    <td><%if item.active_transfer %><%=item.active_transfer.transfer_to.display_name%><%end%></td>
+    <td><!--%= link_to "transfer", {:controller=>'admin/transfers', :action=>'new', 'transfer[equipment_id]'=>item.id} %-->
+	
+	
+	<%= link_to( "transfer!", {:controller=>"admin/transfers", :action => 'new', 'transfer[equipment_id]'=>item.id,
+		'width'=>"600",
+		'height'=>"400"},
+	:title => "Transfering #{item.name}", :class=>"thickbox"
+	      )
+	%>
+	
+	</td>
+</tr>
+
+<% if show_children and not item.children.empty? %>
+<tbody style="background-color:pink;">
+<%= render :partial => 'item', :collection => item.children  %>
+</tbody>
+<% end %>
+
+

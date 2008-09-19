@@ -1,0 +1,10 @@
+<li id="have_custody_<%= have.id %>" <%= have.confirmed? ? 'class="confirmed"' : ''%>>
+<%= have.equipment.name -%>
+<%= image_tag url_for(:controller=>"admin/equipment",:action=>"thumbnail", :id=>have.equipment, :format=>:jpg) if have.equipment.has_image? %><!--<div><%= have.confirmed? ? "confirmed" :
+        link_to_remote("confirm", :url=>{:controller=>'transfer', :action=>'confirm', :id=>have.id})
+
+-%></div>
+
+<%= (ENV['RAILS_ENV'] == 'development') ? link_to_remote("debug: unconfirm",
+		:url => {:controller=>'custody', :action=>'deny', :id=>have.id}) : '' -%>
+	--></li>

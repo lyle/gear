@@ -1,0 +1,119 @@
+body {
+	padding:0px;margin:0px;
+	}
+
+ul,ol {
+	margin-left:1em;
+}
+
+.notes {
+float:right;
+min-width:250px;
+}
+
+.mainBlock{
+ width:600px;
+ border:1px solid black;
+ margin:auto;
+ padding: 1em;
+ margin-bottom: 1em;
+}
+.mainBlock h2 {
+	margin:0px;
+}
+a.create {
+ float:right;	
+ color:green;
+ font-weight:bold;
+	font-size:1.2em;
+}
+.inactive {
+  color:#666;
+}
+#header {
+	margin-top:8px;
+	border-bottom: 2px solid black;
+}
+#header br {
+	clear:both;
+}
+#nav {
+list-style:none;
+width:100%;
+margin:0px;padding:0px;
+position:relative;
+display:block;
+}
+#nav li {
+float:left;
+padding: 0px 3px;
+}
+#nav li a{
+  padding: 5px 10px 2px 10px;
+  background-color: #999999;
+  color:black;
+  font-weight:bold;
+  font-family: "Helvetica";
+  border: 1px solid black;
+}
+body.equipment #nav li.equipment a,
+body.transfers #nav li.transfers a,
+body.locations #nav li.locations a,
+body.people #nav li.people a,
+body.groups #nav li.groups a {
+  background-color:white;
+  border-bottom: 1px solid white;
+}
+body.transfers div.mainBlock {
+	width:90%;
+	
+}
+#nav li a:hover{
+  background-color: #AA99AA;
+}
+
+
+#content {
+  margin:10px;
+}
+
+.mainBlock label {
+  color:#666;
+}
+.bottomlinks {
+	clear:both;
+	float:right;
+}
+
+.liveSearch {
+	display:block;
+	height:30px;
+}
+
+.fieldWithErrors {
+	border:1px solid red;
+}
+
+#full_back {
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background: transparent url('../images/50_percent_black_background.gif');
+	z-index: 100;
+}
+
+#transfer_form {
+  width:560px;
+  padding:20px;
+  border: 2px solid green;	
+  background-color: white;
+  position:absolute;
+  top:2em;
+  z-index: 200;
+}
+
+div.locations {
+	float:right;
+}

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  equipment_id: 1
+  reservation_id: 1
+  from_person_id: 1
+  to_person_id: 1
+  created_by: MyString
+  confirmed: false
+  created_at: 2008-07-18 11:28:39
+  updated_at: 2008-07-18 11:28:39
+two:
+  id: 2
+  equipment_id: 1
+  reservation_id: 1
+  from_person_id: 1
+  to_person_id: 1
+  created_by: MyString
+  confirmed: false
+  created_at: 2008-07-18 11:28:39
+  updated_at: 2008-07-18 11:28:39

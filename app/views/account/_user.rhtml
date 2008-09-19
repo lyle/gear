@@ -1,0 +1,6 @@
+<div class="user">
+Logged in as: <%= current_person.display_name %><br />
+<%= link_to "edit profile", :controller => "profile", :action => "edit", :id => current_person.id %> | 
+<%= link_to "log out", :controller => "account", :action => "logout" %>
+<!--You currently have %= current_person.checked_out_item_count %> checked out items.-->
+</div>

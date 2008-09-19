@@ -1,0 +1,18 @@
+<li><%= link_to_function transfer_to.display_name, nil do |page|
+	
+	if (transfer_to.type.to_s == "Location")
+		page[:transfer_to_text].replace_html "to location: #{transfer_to.display_name}"
+		page[:transfer_to_location_id].value=transfer_to.id
+		page[:transfer_to_person_id].value=""
+		page[:transfer_transfer_to_type].value="Location"
+	elsif (transfer_to.type.to_s == "Person")
+		page[:transfer_to_text].replace_html "to person: #{transfer_to.display_name}"
+		page[:transfer_to_person_id].value=transfer_to.id
+		page[:transfer_to_location_id].value=""
+		page[:transfer_transfer_to_type].value="Person"
+	else
+		page[:transfer_to_text].replace_html transfer_to.type
+	end
+ end
+%></li>
+

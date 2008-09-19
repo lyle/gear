@@ -1,0 +1,64 @@
+<h2>Transfer <%= transfer.equipment.name %> <%= transfer.equipment.inventory_identifier  %></h2>
+
+
+<!--
+<%= form_tag({:controller=> "/profile", :action=> "live_search"}, { :onSubmit => "Element.show('transfer_spinner');" }) %>
+
+<table>
+<tr>
+<td><label for="searchtext"><font size="1"><b>Person filter:</b></font></label></td>
+<td><%= text_field_tag :searchtext %></td>
+<td><img alt="spinner" id="transfer_spinner" src="/images/loadinfo.net.gif" style="display:none;" /></td>
+</tr>
+</table>
+</form>
+
+<%= observe_field(:searchtext,
+                 :frequency => 0.5,
+		 :with => 'searchtext',
+                 :update => :search_hits,
+                 :loading => "Element.show('transfer_spinner')",
+                 :complete => "Element.hide('transfer_spinner')",
+                 :url => { :action => :live_search, :controller => '/profile' }) %>
+-->
+<h3><%if transfer.equipment.active_transfer %> from <%= transfer.equipment.active_transfer.transfer_to.name %><% end %></h3>
+
+<h3 id="transfer_to_text">to...</h3>
+<% form_tag :action => 'create', :controller => 'admin/transfers' do %>
+<input type="hidden" name="transfer[equipment_id]" id="transfer_equipemtn_id" value="<%=transfer.equipment.id%>">
+<input type="hidden" id="transfer_transfer_to_type" name="transfer[transfer_to_type]">
+<input type="hidden" name="transfer[transfer_to_person_id]" id="transfer_to_person_id" value="">
+<input type="hidden" name="transfer[transfer_to_location_id]" id="transfer_to_location_id" value="">
+<%= submit_tag "Transfer" %>
+<% end %>
+<hr />
+<div class="locations">
+	<% if locations %>
+	Locations:
+	<ul>
+		<%= render :partial => 'admin/transfers/transfer_to', :collection => locations %>
+	</ul>
+	<% end%>
+
+</div>
+
+
+<div id="search_hits" style="width:50%;">
+
+<%
+if groups 
+	for group in groups %>
+		<h2><%=h group.name %></h2>
+		<ul>
+			<%= render :partial => 'admin/transfers/transfer_to', :collection => group.people %>
+		</ul>
+<% 
+	end
+end%>
+</div>
+
+
+
+
+
+

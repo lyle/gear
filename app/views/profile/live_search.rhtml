@@ -1,0 +1,7 @@
+<% if @results.empty? %>
+  '<%=h @phrase %>' not found!
+<% else %>
+  <!--'<%=h @phrase %>' found <b><%= @number_match %></b> time(s)!-->
+<%= render :partial => 'user_for_transfer', :collection => @results %>
+
+<% end %>

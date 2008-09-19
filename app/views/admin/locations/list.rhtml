@@ -1,0 +1,25 @@
+<div class="mainBlock">
+
+<h1>Listing locations</h1>
+
+<%= link_to 'New location', :action => 'new' %>
+<table>
+  <tr>
+    <th>Name</th><th>actions</th>
+  </tr>
+  
+<% for location in @locations %>
+  <tr>
+    <td><%=h location.name%></td>
+    <td><%= link_to 'Show', :action => 'show', :id => location %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => location %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => location }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= will_paginate @locations %>
+
+<br />
+
+</div>
