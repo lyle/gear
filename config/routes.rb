@@ -17,6 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.namespace :admin do |admin|
     admin.resources :equipment
+    admin.equipment_full_image 'equipment/full_image/:id.:format', :controller=>'equipment', :action => 'full_image' 
     admin.resources :groups
     admin.resources :people
   end

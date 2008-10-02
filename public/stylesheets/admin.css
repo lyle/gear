@@ -6,13 +6,13 @@ ul,ol {
 	margin-left:1em;
 }
 
-.notes {
+div.notes {
 float:right;
-min-width:250px;
+width:350px;
 }
 
 .mainBlock{
- width:600px;
+ width:700px;
  border:1px solid black;
  margin:auto;
  padding: 1em;
@@ -84,7 +84,9 @@ body.transfers div.mainBlock {
 	clear:both;
 	float:right;
 }
-
+br.bottom {
+	clear:both;
+}
 .liveSearch {
 	display:block;
 	height:30px;
@@ -116,4 +118,7 @@ body.transfers div.mainBlock {
 
 div.locations {
 	float:right;
+}
+img {
+	border: none;
 }

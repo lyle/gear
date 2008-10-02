@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   include AuthenticatedSystem
   # If you want "remember me" functionality, add this before_filter to Application Controller
   #before_filter :login_from_cookie
-  ActiveScaffold.set_defaults do |config| 
-    config.ignore_columns.add [:created_at, :updated_at, :lock_version]
-  end
+  #ActiveScaffold.set_defaults do |config| 
+  #  config.ignore_columns.add [:created_at, :updated_at, :lock_version]
+  #end
 end

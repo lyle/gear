@@ -4,7 +4,7 @@
 	
 	<h2><%= h @equipment.name  %></h2>
 	
-	<p class="notes"><label>Notes</label><br /><%= h @equipment.notes%></p>
+	<div class="notes"><label>Notes</label><br /><%= textilize @equipment.notes %></div>
 	<% if not @equipment.transfers.empty? %>
 	<p>This item is <%= @equipment.active_transfer.in_or_with %>.</p>
 	<% end %> 
@@ -26,6 +26,8 @@
 <% if @equipment.has_image? %>
 	<%= image_tag formatted_admin_equipment_path(@equipment, :jpg) %>
 <% end %>
+
+   <br class="bottom" />
 	<div class="bottomlinks">
 	<%= link_to 'Edit', :action => :edit, :id => @equipment %>
 	<%= link_to 'Delete', {:action => :destroy, :id => @equipment}, :confirm=>"Are you sure you want to kill\nthis lovely peice of equipment? \nIt will go away for ever.", :method => :delete %>

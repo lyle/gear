@@ -71,7 +71,7 @@ h2. Get the Will Paginate Plugin
 sudo gem install will_paginate
 </pre>
 
-h2.Download and install Active LDAP
+h2. Download and install Active LDAP
 
 http://rubyforge.org/frs/?group_id=381
 I downloaded activeldap-1.0.1.gem

@@ -15,6 +15,9 @@ class Admin::EquipmentController < ApplicationController
   def show
     @equipment = Equipment.find(params[:id])
   end
+  def full_image
+    @equipment = Equipment.find(params[:id])
+  end
   def thumbnail
     @equipment = Equipment.find(params[:id])
   end
