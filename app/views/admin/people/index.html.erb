@@ -6,6 +6,7 @@
   <tr>
     <th>Name</th>
 	<th>Groups</th>
+	<th># Items</th>
     <th>Actions</th>
   </tr>
 
@@ -13,6 +14,7 @@
   <tr>
     <td><%=h person.display_name %><%= " (admin)" if person.administrator? %></td>
 	<td><%= person.groups.join(', ')  %></td>
+	<td><%= person.active_transfers.count  %></td>
     <td><%= link_to 'Show', :controller=>"admin/people", :action=>"show", :id=>person %> | <%= link_to 'Edit', edit_admin_person_path(person) %></td>
   </tr>
 <% end %>

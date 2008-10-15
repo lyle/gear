@@ -20,3 +20,23 @@
 <%= link_to 'Edit', edit_admin_person_path(@person) %> |
 <%= link_to 'Back', admin_people_path %>
 </div>
+
+
+<div class="mainBlock">
+
+This person has the following items:
+<ul>
+<% @person.items.each do |item| %>
+<li><%= item.ident_n_name %> <%= link_to image_tag('icons/left_arrow_icon.gif',:size=>'19x9'), admin_equipment_url(item)%></li>
+<% end %>
+</ul>
+<hr />
+At one time it did have these:
+<ul>
+<% @person.recived_transfers.each do |transfer| %>
+<% if not transfer.active? %>
+<li><%= transfer.equipment.ident_n_name %> <%=transfer.created_at%></li>
+<% end %>
+<% end %>
+</ul>
+</div>

@@ -122,3 +122,8 @@ div.locations {
 img {
 	border: none;
 }
+
+.transfer_name {
+	font-size: 1.2em;
+	font-weight:bold;
+}

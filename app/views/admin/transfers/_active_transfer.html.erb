@@ -1,0 +1,8 @@
+	
+	<p><%= if active_transfer.transfer_to_type == "Location" then "In" else "With" end%>:
+		<span class="transfer_name">
+		<%= active_transfer.transfer_to.name %>
+		</span> <%= link_to image_tag('icons/left_arrow_icon.gif',:size=>'19x9'),
+		if active_transfer.transfer_to_type == "Location" then admin_location_url(active_transfer.transfer_to) else admin_person_url(active_transfer.transfer_to) end
+			%>
+	</p>

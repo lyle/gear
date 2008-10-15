@@ -1,8 +1,8 @@
-<% if @results.empty? %>
+<% if @items.empty? %>
   '<%=h @phrase %>' not found!
 <% else %>
-  <!--'<%=h @phrase %>' found <b><%= @number_match %></b> time(s)!-->
+<tr><td colspan="4" align="center">'<%=h @phrase %>' found <%= pluralize(@items.length,'item')%>.</td></tr>
 
-<%= render :partial => 'item', :collection => @results, :locals => {:show_children=>false} %>
+<%= render :partial => 'item', :collection => @items, :locals => {:show_children=>false} %>
 
 <% end %>

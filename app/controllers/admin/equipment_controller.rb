@@ -6,9 +6,38 @@ class Admin::EquipmentController < ApplicationController
 
 
   def index
-    @items = Equipment.paginate :page => params[:page], :order => 'created_at DESC'
+    
+    @inventory_identifier_order = "inventory_identifier"
+    @name_order = "name"
+    
+    if params[:order] == 'inventory_identifier'
+      sort_by = "inventory_identifier"
+      @inventory_identifier_order = "inventory_identifier DESC"
+    elsif params[:order] == 'inventory_identifier DESC'
+      sort_by = "inventory_identifier DESC"
+    elsif params[:order] == 'name'
+      sort_by = "name"
+      @name_order = "name DESC"
+    elsif params[:order] == 'name DESC'
+      sort_by = "name DESC"
+    else
+      sort_by = 'created_at DESC'
+    end
+    
+    if params[:q]
+      @phrase = params[:q]              
+      @searchphrase = "%"  + @phrase + "%"
+      @conditions = [ "description LIKE ? OR name LIKE ? OR manufacturer LIKE ? OR model LIKE ? OR inventory_identifier LIKE ? OR notes LIKE ?", @searchphrase, @searchphrase, @searchphrase, @searchphrase, @searchphrase, @searchphrase]
+
+
+      @items = Equipment.find(:all, :conditions => @conditions, :order=>sort_by)
+    else
+      @items = Equipment.find(:all, :order=>sort_by, :include=>:active_transfer)
+    end
+    #@items = Equipment.paginate :page => params[:page], :order => 'created_at DESC'
     respond_to do |format|
       format.html { render :action =>'list' }
+      format.js {render(:layout => false)}
     end
   end
   
@@ -53,13 +82,13 @@ class Admin::EquipmentController < ApplicationController
       end
     end
   end
-  def destroy_all
-    @equipment = Equipment.find(:all)
-    for @item in @equipment
-      @item.destroy
-    end
-    render :text => "done"
-  end
+  #def destroy_all
+  #  @equipment = Equipment.find(:all)
+  #  for @item in @equipment
+  #    @item.destroy
+  #  end
+  #  render :text => "done"
+  #end
   
   def destroy
     @equipment = Equipment.find(params[:id])
@@ -74,17 +103,15 @@ class Admin::EquipmentController < ApplicationController
 
   end
   def live_search
+      @phrase = params[:q]              
+      @searchphrase = "%"  + @phrase + "%"
+      @items = Equipment.find(:all, :conditions => [ "description LIKE ? OR name LIKE ? OR manufacturer LIKE ? OR model LIKE ? OR inventory_identifier LIKE ? OR notes LIKE ?", @searchphrase, @searchphrase, @searchphrase, @searchphrase, @searchphrase, @searchphrase])
 
-      @phrase = params[:searchtext]
-      request.raw_post || request.query_string
-      a1 = "%"
-      a2 = "%"
-      @searchphrase = a1  + @phrase + a2
-      @results = Equipment.find(:all, :conditions => [ "description LIKE ? OR name LIKE ? OR manufacturer LIKE ? OR model LIKE ? OR inventory_identifier LIKE ? OR notes LIKE ?", @searchphrase, @searchphrase, @searchphrase, @searchphrase, @searchphrase, @searchphrase])
-
-      @number_match = @results.length
-
-      render(:layout => false)
+      respond_to do |format|
+        format.html { render :action =>'list' }
+        format.js {render(:layout => false)}
+      end
+      
   end
   
   #active_scaffold :equipment do |config|

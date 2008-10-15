@@ -1,23 +1,24 @@
 <div class="liveSearch">
-<%= form_tag({:action=> "live_search"}, { :onSubmit => "Element.show('spinner');" }) %>
-<label for="searchtext">Live Gear Search:</label>
-<%= text_field_tag :searchtext%>
+<%= form_tag({:action=> "index"}, {:method=>:get, :onSubmit => "Element.show('spinner');" }) %>
+<label for="q">Live Gear Search:</label>
+<%= text_field_tag :q, params[:q] %>
 <img alt="spinner" id="spinner" src="/images/loadinfo.net.gif" style="display:none;" align="top"/>
 
 </form>
 </div>
-<%= observe_field(:searchtext,
+<%= observe_field(:q,
                  :frequency => 0.5,
-		 :with => 'searchtext',
+		 :with => 'q',
                  :update => :search_hits,
                  :loading => "Element.show('spinner')",
                  :complete => "Element.hide('spinner');tb_init('a.thickbox, area.thickbox, input.thickbox');",
                  :url => { :action => :live_search, :controller => 'equipment' }) %>
+
 <table width="100%">
 <tr>
 	<th>&nbsp;</th>
-    <th>DANM S/N</th>
-    <th>Equipment</th>
+    <th><%= link_to  "DANM S/N", {:order=>@inventory_identifier_order, :q=>params[:q]} %></th>
+    <th><%= link_to  "Equipment", { :order=>@name_order, :q=>params[:q]} %></th>
     <th>Who / Where</th>
     <th></th>
 </tr>

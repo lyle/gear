@@ -5,8 +5,10 @@
 	<h2><%= h @equipment.name  %></h2>
 	
 	<div class="notes"><label>Notes</label><br /><%= textilize @equipment.notes %></div>
-	<% if not @equipment.transfers.empty? %>
-	<p>This item is <%= @equipment.active_transfer.in_or_with %>.</p>
+	<% if @equipment.transfers.empty? %>
+		Assign this item to a place or person:  
+	<% else %>
+	<%= render	:partial=>"admin/transfers/active_transfer", :object=>@equipment.active_transfer%>
 	<% end %> 
 	<%= link_to( "transfer!", {:controller=>"admin/transfers", :action => 'new', 'transfer[equipment_id]'=>@equipment.id,
 		'width'=>"600",
@@ -14,7 +16,8 @@
 	:title => "Transfering #{@equipment.name}", :class=>"thickbox"
 	      )
 	%>
-		
+			<br />
+				<br />
 	<p><label>Descripton</label><br /><%= h @equipment.description %></p>
 
 	<p><label>DANM #:</label> <%= h @equipment.inventory_identifier %></p>

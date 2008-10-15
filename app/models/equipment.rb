@@ -12,7 +12,7 @@ class Equipment < ActiveRecord::Base
   #  :class_name => "Custodian", :foreign_key => "equipment_id", :conditions => "child_id IS NULL"
   has_many :transfers, :order => 'active DESC, id DESC', :dependent => :destroy
   has_one :active_transfer,
-    :class_name=> "Transfer", :foreign_key => "equipment_id", :conditions => ["active = ?", true]
+    :class_name=> "Transfer", :foreign_key => "equipment_id", :conditions => ["active = ?", true], :include => :transfer_to
   
   #has_one :transfer_to, :through=> :active_transfer
 

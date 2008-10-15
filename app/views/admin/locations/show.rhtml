@@ -1,3 +1,4 @@
+<div class="mainBlock">
 
 <% for column in Location.content_columns %>
 <p>
@@ -5,13 +6,24 @@
 </p>
 <% end %>
 
+
+<div class="bottomlinks">
+<%= link_to 'Edit', :action => 'edit', :id => @location %> |
+<%= link_to 'List', :action => 'list' %>
+</div>
+
+</div>
+
+
+<div class="mainBlock">
+
 This room has the following items:
 <ul>
 <% @location.items.each do |item| %>
-<li><%= item.ident_n_name %></li>
+<li><%= item.ident_n_name %> <%= link_to image_tag('icons/left_arrow_icon.gif',:size=>'19x9'), admin_equipment_url(item)%></li>
 <% end %>
 </ul>
-
+<hr />
 At one time it did have these:
 <ul>
 <% @location.recived_transfers.each do |transfer| %>
@@ -20,9 +32,4 @@ At one time it did have these:
 <% end %>
 <% end %>
 </ul>
-
-
-<div class="bottomlinks">
-<%= link_to 'Edit', :action => 'edit', :id => @location %> |
-<%= link_to 'List', :action => 'list' %>
 </div>
