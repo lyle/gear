@@ -10,16 +10,18 @@
     <th>Equipment</th>
     <th>From</th>
     <th>To</th>
+	<th>Transfered By</th>
     <th>Updated</th>
     <th>Action</th>
   </tr>
   
 <% for transfer in @transfers %>
   <tr class="<%= transfer.active? ? 'active' : 'inactive'%>">
-    <td><%=h transfer.equipment.ident_n_name%></td>
+    <td><%= link_to transfer.equipment.ident_n_name, :controller=>'admin/equipment', :action=>'show', :id=>transfer.equipment %></td>
     <td><% if transfer.transfer_from.nil? %>-----<%else%><%=h transfer.transfer_from.name %><%end%></td>
     <td><% if transfer.transfer_to.nil? %>-----<%else%><%=h transfer.transfer_to.name %><%end%></td>
-    <td><%=h time_ago_in_words(transfer.updated_at) %> ago</td>
+    <td><%= transfer.creator.name %> </td>
+	<td><%=h time_ago_in_words(transfer.updated_at) %> ago</td>
     <td><%= link_to 'Show', :action => 'show', :id => transfer %></td>
   </tr>
 <% end %>
