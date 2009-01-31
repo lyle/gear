@@ -22,12 +22,12 @@ class AccountController < ApplicationController
     
     #this is for over-riding the ldap stuff, in case it is not working
     # just uncomment this next two lines
-    @person = Person.find(:first, :conditions => [ "login = ?", login])
-    self.current_person = @person
+  #@person = Person.find(:first, :conditions => [ "login = ?", login])
+  #self.current_person = @person
     #and toggle the comments on the next two lines
-    if 1==2
+  #if 1==2
     
-    #if Ldapuser.login(login,password)
+    if Ldapuser.login(login,password)
       #login successful 
       flash[:notice] = "Logged in successfully"
       # get a valid person and save it to the current_person
