@@ -1,4 +1,5 @@
 class Admin::LocationsController < ApplicationController
+  
   layout "admin"  
   include AuthenticatedSystem
   before_filter :login_required
@@ -9,8 +10,10 @@ class Admin::LocationsController < ApplicationController
   end
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => :post, :only => [ :destroy, :create, :update ],
-         :redirect_to => { :action => :list }
+  verify :method => :post, :only => [ :create, :update ],
+         :redirect_to => { :action => :index }
+  verify :method => :delete, :only => :destroy,
+         :redirect_to => { :action => :index }
 
   def list
     
@@ -30,7 +33,7 @@ class Admin::LocationsController < ApplicationController
     @location = Location.new(params[:location])
     if @location.save
       flash[:notice] = 'Location was successfully created.'
-      redirect_to :action => 'list'
+      redirect_to :action => 'index'
     else
       render :action => 'new'
     end
@@ -52,6 +55,8 @@ class Admin::LocationsController < ApplicationController
 
   def destroy
     Location.find(params[:id]).destroy
-    redirect_to :action => 'list'
+    flash[:notice] = "Okay, I killed that pesky location."
+    
+    redirect_to :action => 'index'
   end
 end
