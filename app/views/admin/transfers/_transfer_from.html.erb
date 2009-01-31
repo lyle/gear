@@ -1,0 +1,12 @@
+	
+	<%= if transfer_from.transfer_from_type == "Location" then "Was In" else "Was With" end%>:
+		<span class="transfer_name">
+		<%= transfer_from.transfer_from.name %>
+		</span> <%= link_to image_tag('icons/left_arrow_icon.gif',:size=>'19x9'),
+		if transfer_from.transfer_from == "Location" then
+			admin_location_url(transfer_from.transfer_from)
+		else
+			admin_person_url(transfer_from.transfer_from)
+		end
+			%>
+	

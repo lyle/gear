@@ -15,7 +15,7 @@ class Admin::TransfersController < ApplicationController
          :redirect_to => { :action => :list }
 
   def list
-    @transfers = Transfer.paginate :page => params[:page], :order => 'active DESC, id DESC', :per_page => 100
+    @transfers = Transfer.paginate :page => params[:page], :order => 'created_at DESC', :per_page => 100
   end
 
   def show

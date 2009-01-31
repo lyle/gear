@@ -8,7 +8,7 @@
 	<% if @equipment.transfers.empty? %>
 		Assign this item to a place or person:  
 	<% else %>
-	<%= render	:partial=>"admin/transfers/active_transfer", :object=>@equipment.active_transfer%>
+		<p><%= render	:partial=>"admin/transfers/transfer_to", :object=>@equipment.active_transfer%></p>
 	<% end %> 
 	<%= link_to( "transfer!", {:controller=>"admin/transfers", :action => 'new', 'transfer[equipment_id]'=>@equipment.id,
 		'width'=>"600",

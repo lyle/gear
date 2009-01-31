@@ -1,4 +1,4 @@
-<div class="mainBlock">
+<div class="mainBlock transfers">
 
 <p>
 This equipment transfer was created
@@ -9,6 +9,23 @@ by <b><%= @transfer.creator.name%></b> <span title="<%= @transfer.created_at%>">
 (need to add confirmation button)
 </p>
 
+<p>
+<ul>
+	<li><label>Created At</label>:<%= @transfer.created_at%></li>
+	<li><label>Updated At</label>: <%= @transfer.updated_at%></li>
+	<li><label>Equipment</label>: <%= @transfer.equipment.ident_n_name %> <%= link_to "show", :controller=>'admin/equipment', :action=>'show', :id=>@transfer.equipment %></li>
+	
+	<% if not @transfer.transfer_from.nil? %>
+	  <li><label>Transfered From</label>: <%= render	:partial=>"admin/transfers/transfer_from", :object=>@transfer%></li>
+	<%end%>
+	<% if not @transfer.transfer_to.nil? %>
+	  <li><label>Transfered To</label>: <%= render	:partial=>"admin/transfers/transfer_to", :object=>@transfer%></li>
+	<%end%>
+	<li><label>Created By</label>: <%= @transfer.creator.name%></li>
+	<li><label>Currently</label>: <%= @transfer.active ? "active" : "not active"  %></li>
+	<li><label>Transfer Date </label>: <%= @transfer.date ? @transfer.date : "(currently not used)"%></li>
+</ul>
+</p>
 
 <br />
 <label>DANM# & Name</label>

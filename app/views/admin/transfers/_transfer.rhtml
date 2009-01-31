@@ -1,6 +1,6 @@
 <h2>Transfer <%= transfer.equipment.name %> <%= transfer.equipment.inventory_identifier  %></h2>
 
-
+<div class="transfer_box">
 <!--
 <%= form_tag({:controller=> "/profile", :action=> "live_search"}, { :onSubmit => "Element.show('transfer_spinner');" }) %>
 
@@ -32,33 +32,35 @@
 <%= submit_tag "Transfer" %>
 <% end %>
 <hr />
+<div>
+
+
+<div class="groups">
+   People: 
+<%	 if groups  %>
+<%		for group in groups %>
+			<h2><%=h group.name %></h2>
+			<ul>
+				<%= render :partial => 'admin/transfers/transfer_to_target', :collection => group.people %>
+			</ul>
+<%		end %>
+<%	end %>
+</div>	
+
 <div class="locations">
 	<% if locations %>
 	Locations:
 	<ul>
-		<%= render :partial => 'admin/transfers/transfer_to', :collection => locations %>
+		<%= render :partial => 'admin/transfers/transfer_to_target', :collection => locations %>
 	</ul>
 	<% end%>
 
 </div>
 
 
-<div id="search_hits" style="width:50%;">
-
-<%
-if groups 
-	for group in groups %>
-		<h2><%=h group.name %></h2>
-		<ul>
-			<%= render :partial => 'admin/transfers/transfer_to', :collection => group.people %>
-		</ul>
-<% 
-	end
-end%>
 </div>
 
 
 
 
-
-
+</div>

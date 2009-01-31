@@ -116,9 +116,23 @@ br.bottom {
   z-index: 200;
 }
 
-div.locations {
+.transfer_box div.groups {
 	float:right;
+	width:70%;
+	height:300px;
+	overflow:scroll;
 }
+.transfer_box div.groups li {
+	width:50%;
+	float:left;
+}
+.transfer_box div.groups  h2 {
+	clear:both;
+}
+.transfer_box div.locations {
+	height:300px;
+	overflow:scroll;
+}  
 img {
 	border: none;
 }
@@ -126,4 +140,13 @@ img {
 .transfer_name {
 	font-size: 1.2em;
 	font-weight:bold;
+}
+.transfers ul {
+	list-style:none;
+}
+.transfers ul label {
+	display:block;
+	float:left;
+	width:10em;
+	text-align:right;
 }

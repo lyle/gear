@@ -1,0 +1,12 @@
+	
+	<%= if transfer_to.transfer_to_type == "Location" then "Now In" else "Now With" end%>:
+		<span class="transfer_name">
+		<%= transfer_to.transfer_to.name %>
+		</span> <%= link_to image_tag('icons/left_arrow_icon.gif',:size=>'19x9'),
+		if transfer_to.transfer_to_type == "Location" then
+			admin_location_url(transfer_to.transfer_to)
+		else
+			admin_person_url(transfer_to.transfer_to)
+		end
+			%>
+	
