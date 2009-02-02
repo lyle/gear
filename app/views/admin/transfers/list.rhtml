@@ -11,7 +11,7 @@
     <th>From</th>
     <th>To</th>
 	<th>Transfered By</th>
-    <th>Updated</th>
+    <th>Created At</th>
     <th>Action</th>
   </tr>
   
@@ -21,7 +21,7 @@
     <td><% if transfer.transfer_from.nil? %>-----<%else%><%=h transfer.transfer_from.name %><%end%></td>
     <td><% if transfer.transfer_to.nil? %>-----<%else%><%=h transfer.transfer_to.name %><%end%></td>
     <td><%= transfer.creator.name %> </td>
-	<td><%=h time_ago_in_words(transfer.updated_at) %> ago</td>
+	<td><%=h time_ago_in_words(transfer.created_at) %> ago</td>
     <td><%= link_to 'Show', :action => 'show', :id => transfer %></td>
   </tr>
 <% end %>
