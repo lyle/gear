@@ -1,9 +1,20 @@
 <p>This system is not yet totally functional. Please talk to the DANM Technical Staff if the following is not true.</p>
+<div id="left">
+	
 <div id="youHave">
 	<h1>You Currently Have</h1>
 	<ul>
 	<%= render :partial => 'have' , :collection => current_person.active_transfers  %>	
 	</ul>
 </div>
+</div>
+<div id="right">
+	
+<div class="mainBlock">
+	<%= render :partial => 'admin/equipment/search_for_equipment',:locals => {:equipment => @equipment} %>
+		
+	
+</div>
 
+</div>
 

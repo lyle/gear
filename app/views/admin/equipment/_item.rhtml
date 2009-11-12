@@ -7,6 +7,7 @@
     <td><%if item.active_transfer %><%=item.active_transfer.transfer_to.display_name%><%end%></td>
     <td><!--%= link_to "transfer", {:controller=>'admin/transfers', :action=>'new', 'transfer[equipment_id]'=>item.id} %-->
 	
+	<% if current_person.administrator? %>
 	
 	<%= link_to( "transfer!", {:controller=>"admin/transfers", :action => 'new', 'transfer[equipment_id]'=>item.id,
 		'width'=>"600",
@@ -14,7 +15,7 @@
 	:title => "Transfering #{item.name}", :class=>"thickbox"
 	      )
 	%>
-	
+	<% end -%>
 	</td>
 </tr>
 

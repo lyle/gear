@@ -1,4 +1,5 @@
-<tr><td><%= item.name %><%= link_to "?", :controller => "equipment", :action => "show", :id=> item %></td><td><%= item.inventory_identifier %></td>
+<tr><td><%= link_to item.name, :controller => "equipment", :action => "show", :id=> item %></td><td><%= item.inventory_identifier -%></td>
+	
 <% if show_children and item.children %>
 <table style="background-color:pink">
 <%= render :partial => 'item', :collection => item.children  %>

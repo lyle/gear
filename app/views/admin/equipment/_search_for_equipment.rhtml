@@ -17,8 +17,8 @@
 <table width="100%">
 <tr>
 	<th>&nbsp;</th>
-    <th><%= link_to  "DANM S/N", {:order=>@inventory_identifier_order, :q=>params[:q]} %></th>
-    <th><%= link_to  "Equipment", { :order=>@name_order, :q=>params[:q]} %></th>
+    <th>DANM S/N <%= link_to  "sort", {:order=>@inventory_identifier_order, :q=>params[:q]} if current_person.administrator? %></th>
+    <th>Equipment <%= link_to  "sort", { :order=>@name_order, :q=>params[:q]} if current_person.administrator? %></th>
     <th>Who / Where</th>
     <th></th>
 </tr>

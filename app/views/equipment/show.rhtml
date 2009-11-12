@@ -1,32 +1,14 @@
 <h1><%= @item.name %></h1>
-<table>
-<tr>
-<td>name:</td><td><%= @item.name %></td></tr>
-<tr><td>description:</td><td><%= @item.description %></td></tr>
-<tr><td>DANM #:</td><td><%= @item.inventory_identifier %></td></tr>
-<tr><td>manufacturer:</td><td><%= @item.manufacturer %></td></tr>
-<tr><td>model:</td><td><%= @item.model %></td></tr>
-<tr><td>serial:</td><td><%= @item.serial_number %></td></tr>
-<tr><td>status:</td><td><%= @item.status %></td></tr>
-<tr><td>notes:</td><td><%= @item.notes %></td></tr>
-<tr><td>parent_id:</td><td><%= @item.parent_id %></td></tr>
-<tr><td>child_count:</td><td><%= @item.children_count %></td></tr>
-<tr><td>created_by:</td><td><%= @item.created_by %></td></tr>
-<tr><td>created_at:</td><td><%= @item.created_at %></td></tr>
-<tr><td>updated_at:</td><td><%= @item.updated_at %></td></tr>
-</table>
+<div class="mainBlock">
+	<div class="notes"><label>Notes</label><br /><%= textilize @item.notes %></div>
+	<% if ! @item.transfers.empty? %>
+		<p><%= render	:partial=>"admin/transfers/transfer_to", :object=>@item.active_transfer%></p>
+	<% end %>
+<%= render :partial => 'admin/equipment/details', :locals => {:equipment => @item}%>
+</div>
 
-<% if @item.custodian %>
-<h1>Responsible People</h1>
-<table>
-	<thead>
-		<tr>
-			<th>Person</th>
-			<th>Received</th>
-			<th>Transfered</th>
-		</tr>
-	</thead>
-	<tbody><%= render :partial => "custody/custody", :object =>@item.custodian %></tbody>
-	<tbody><%= render :partial => "custody/custody", :collection =>@item.former_custodians %></tbody>
-</table>
-<% end%>
+<div class="mainBlock">
+<% if not @item.transfers.empty? %>
+<%= render :partial => 'admin/equipment/transfers', :locals => {:transfers => @item.transfers} %>
+<% end %>
+</div>

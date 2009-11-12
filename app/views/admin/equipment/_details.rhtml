@@ -1,0 +1,10 @@
+	<p><label>Descripton</label><br /><%= h equipment.description %></p>
+
+	<p><label>DANM #:</label> <%= h equipment.inventory_identifier %></p>
+	<p class="manufacturer">
+	<label>Make:</label> <%= h equipment.manufacturer  %><br />
+	<label>Model:</label> <%= h equipment.model  %><br />
+	<label>Serial Number:</label> <%= h equipment.serial_number  %></p>
+<% if equipment.has_image? %>
+	<%= image_tag formatted_admin_equipment_path(equipment, :jpg) %>
+<% end %>

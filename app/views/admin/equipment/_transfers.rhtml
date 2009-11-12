@@ -7,7 +7,9 @@ History of transfers of this item:
     <th>From</th>
     <th>To</th>
     <th>Updated</th>
+<% if current_person.administrator? %>
     <th>Action</th>
+<% end %>
   </tr>
   
 <% for transfer in transfers %>
@@ -16,7 +18,9 @@ History of transfers of this item:
     <td><% if transfer.transfer_from.nil? %>-----<%else%><%=h transfer.transfer_from.name %><%end%></td>
     <td><% if transfer.transfer_to.nil? %>-----<%else%><%=h transfer.transfer_to.name %><%end%></td>
     <td><%=h time_ago_in_words(transfer.updated_at) %> ago</td>
+<% if current_person.administrator? %>
     <td><%= link_to 'Show', :controller=>'admin/transfers', :action => 'show', :id => transfer %></td>
+<% end %>
   </tr>
 <% end %>
 </table>
