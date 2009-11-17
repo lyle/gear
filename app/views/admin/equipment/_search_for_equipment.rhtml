@@ -1,3 +1,5 @@
+
+<% if current_person.administrator? %>
 <div class="liveSearch">
 <%= form_tag({:action=> "index"}, {:method=>:get, :onSubmit => "Element.show('spinner');" }) %>
 <label for="q">Live Gear Search:</label>
@@ -13,7 +15,7 @@
                  :loading => "Element.show('spinner')",
                  :complete => "Element.hide('spinner');tb_init('a.thickbox, area.thickbox, input.thickbox');",
                  :url => { :action => :live_search, :controller => 'equipment' }) %>
-
+<% end -%>
 <table width="100%">
 <tr>
 	<th>&nbsp;</th>
