@@ -3,7 +3,14 @@
 <tr>
 	<td><%= link_to (image_tag('image_icon.png'), admin_equipment_full_image_url(:id=>item, :format=>"jpg")) if item.has_image?%></td>
     <td><%=item.inventory_identifier%>
-    <td><%= link_to item.name, :action=>'show', :id=>item %></td>
+	
+	<% if current_person.administrator? %>
+    <td><%= link_to item.name, :controller=>'admin/equipment',:action=>'show', :id=>item %></td>
+	<% else -%>
+	<td><%= link_to item.name, :controller=>'equipment',:action=>'show', :id=>item %></td>
+    
+	<% end -%>
+
     <td><%if item.active_transfer %><%=item.active_transfer.transfer_to.display_name%><%end%></td>
     <td><!--%= link_to "transfer", {:controller=>'admin/transfers', :action=>'new', 'transfer[equipment_id]'=>item.id} %-->
 	
