@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   config.action_controller.session = { :session_key => "_myapp_session", :secret => "sometimes people don't understnad why they don't think" }
   config.gem 'mislav-will_paginate', :version => '~> 2.3.2', :lib => 'will_paginate', :source => 'http://gems.github.com'
 
- # config.gem "RedCloth"
+  config.gem "RedCloth"
 
   # Settings in config/environments/* take precedence over those specified here
   
