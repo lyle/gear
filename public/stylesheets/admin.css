@@ -150,3 +150,14 @@ img {
 	width:10em;
 	text-align:right;
 }
+
+
+#locations li {
+	padding-left:33px;
+	
+	border: 1px solid #fff;
+}
+#locations li:hover, #locations li:active {
+	background: url('/images/icons/drag_33x28.png') no-repeat;
+	border: 1px solid #999;
+}

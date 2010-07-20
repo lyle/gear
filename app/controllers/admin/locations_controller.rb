@@ -10,15 +10,25 @@ class Admin::LocationsController < ApplicationController
   end
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => :post, :only => [ :create, :update ],
+  verify :method => :post, :only => [ :create ],
          :redirect_to => { :action => :index }
   verify :method => :delete, :only => :destroy,
          :redirect_to => { :action => :index }
 
+
+  def sort
+     params[:locations].each_with_index do |id,idx|
+       Location.update(id, :position => idx)
+     end
+     respond_to do |wants|
+       wants.html {render :text => "re-ordered the locations"}
+       wants.js
+    end
+  end
+
+
   def list
-    
-    @locations = Location.paginate :page => params[:page]
-    #, :order => 'created_at DESC'
+    @locations = Location.find(:all,:include => :active_transfers)
   end
 
   def show
@@ -42,16 +52,32 @@ class Admin::LocationsController < ApplicationController
   def edit
     @location = Location.find(params[:id])
   end
-
+  
   def update
     @location = Location.find(params[:id])
-    if @location.update_attributes(params[:location])
-      flash[:notice] = 'Location was successfully updated.'
-      redirect_to :action => 'show', :id => @location
-    else
-      render :action => 'edit'
+
+    respond_to do |format|
+      if @location.update_attributes(params[:location])
+        flash[:notice] = 'location was successfully updated.'
+        format.html { redirect_to([:admin, @location]) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @location.errors, :status => :unprocessable_entity }
+      end
     end
   end
+  
+  
+#  def update
+#    @location = Location.find(params[:id])
+#    if @location.update_attributes(params[:location])
+#      flash[:notice] = 'Location was successfully updated.'
+#      redirect_to :action => 'show', :id => @location
+#    else
+#      render :action => 'edit'
+#    end
+#  end
 
   def destroy
     Location.find(params[:id]).destroy

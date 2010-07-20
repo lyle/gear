@@ -3,29 +3,20 @@
 <h1>Listing locations</h1>
 
 <%= link_to 'New location', :action => 'new' %>
-<table width="80%">
-  <tr>
-    <th>Name</th>
-	<th># Items</th>
-	<th>Actions</th>
-  </tr>
+<ul id="locations">
   
 <% for location in @locations %>
-  <tr>
-    <td><%=h location.name%></td>
-	<td><%= location.active_transfers.count  %></td>
+  <li id="location_<%= location.id %>"><%=h location.name%> (<%= location.active_transfers.count  %> items)<br />
 
-    <td><%= link_to 'Show', :action => 'show', :id => location %>
+    <%= link_to 'Show', :action => 'show', :id => location %>
 	<%= link_to 'Edit', :action => 'edit', :id => location %>
 	<% if location.active_transfers.count == 0 %>
 	<%= link_to 'Delete', {:action => :destroy, :id => location}, :confirm=>"Are you sure you want to kill\nthis lovely location?", :method => :delete %>
 	<% end%>
-	</td>
-  </tr>
+  </li>
 <% end %>
-</table>
-
-<%= will_paginate @locations %>
+</ul>
+<%= sortable_element("locations", :url => { :action => "sort" }) %>
 
 <br />
 

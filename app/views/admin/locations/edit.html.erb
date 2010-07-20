@@ -1,0 +1,24 @@
+<div class="mainBlock">
+<h1>Editing location</h1>
+
+<% form_for([:admin,@location]) do |f| %>
+
+
+ <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+
+
+
+<%= link_to 'Show', ([:admin,@location]) %> |
+<%= link_to 'List', admin_locations_path %> 
+
+</div>
