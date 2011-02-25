@@ -7,3 +7,6 @@ db/*.sqlite3
 db/from_filemaker/*
 vendor/plugins/*
 public/images/equipment/*
+lib/active_ldap/*
+lib/active_ldap.rb
+vendor/gems/*
