@@ -2,7 +2,7 @@
 
 # Uncomment below to force Rails into production mode when 
 # you don't control web/app server and can't set it the proper way
-# ENV['RAILS_ENV'] ||= 'production'
+ENV['RAILS_ENV'] ||= 'development'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 #RAILS_GEM_VERSION = '1.2.3' unless defined? RAILS_GEM_VERSION
@@ -18,11 +18,12 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   
-  config.action_controller.session = { :session_key => "_myapp_session", :secret => "sometimes people don't understnad why they don't think" }
+  config.action_controller.session = { :key => "_myapp_session", :secret => "sometimes people don't understnad why they don't think" }
   config.gem 'mislav-will_paginate', :version => '~> 2.3.2', :lib => 'will_paginate', :source => 'http://gems.github.com'
 
-  config.gem "RedCloth"
-
+  #config.gem "RedCloth", :version => '4.0.4'
+  config.gem "RedCloth", :version => '4.1.1'
+  
   # Settings in config/environments/* take precedence over those specified here
   
   # Skip frameworks you're not going to use (only works if using vendor/rails)

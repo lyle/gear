@@ -4,7 +4,9 @@ class Admin::EquipmentController < ApplicationController
   before_filter :login_required
  # before_filter :login_from_cookie
 
-
+ caches_page :show
+ 
+ 
   def index
     
     @inventory_identifier_order = "inventory_identifier"
@@ -66,6 +68,7 @@ class Admin::EquipmentController < ApplicationController
         format.xml { render :xml =>@equipment.errors, :status => :unprocessable_entry}
       end
     end
+    expire_photo(@equipment)
   end
  
   def new
@@ -92,6 +95,7 @@ class Admin::EquipmentController < ApplicationController
   
   def destroy
     @equipment = Equipment.find(params[:id])
+    expire_photo(@equipment)
     @equipment.destroy
     flash[:notice] = "Okay, I killed that pesky \"#{@equipment.name}\" item."
     
@@ -100,7 +104,6 @@ class Admin::EquipmentController < ApplicationController
       format.html { redirect_to(:controller=>"admin/equipment", :action=>"index")}
       format.xml {head :ok}
     end
-
   end
   def live_search
       @phrase = params[:q]              
@@ -134,4 +137,11 @@ class Admin::EquipmentController < ApplicationController
       
       
    # end
+   
+   
+   
+   private
+   def expire_photo(photo)
+     expire_page formatted_admin_equipment_path(photo, :jpg)
+   end
 end
