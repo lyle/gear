@@ -3,7 +3,7 @@
 <div class="liveSearch">
 <%= form_tag({:action=> "index"}, {:method=>:get, :onSubmit => "Element.show('spinner');" }) %>
 <label for="q">Live Gear Search:</label>
-<%= text_field_tag :q, params[:q] %>
+<%= text_field_tag :q, params[:q], :autofocus=> "true" %>
 <img alt="spinner" id="spinner" src="/images/loadinfo.net.gif" style="display:none;" align="top"/>
 
 </form>

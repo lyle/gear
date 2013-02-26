@@ -1,16 +1,21 @@
+
+
 # Be sure to restart your web server when you modify this file.
 
 # Uncomment below to force Rails into production mode when 
 # you don't control web/app server and can't set it the proper way
-ENV['RAILS_ENV'] ||= 'development'
+ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 #RAILS_GEM_VERSION = '1.2.3' unless defined? RAILS_GEM_VERSION
 #RAILS_GEM_VERSION = '2.1.1' unless defined? RAILS_GEM_VERSION
 #RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
 
-RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
 
+#RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.11' unless defined? RAILS_GEM_VERSION
+
+RAILS_GEM_VERSION = '2.3.17' unless defined? RAILS_GEM_VERSION
 
 
 # Bootstrap the Rails environment, frameworks, and default configuration
@@ -19,7 +24,11 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   
   config.action_controller.session = { :key => "_myapp_session", :secret => "sometimes people don't understnad why they don't think" }
-  config.gem 'mislav-will_paginate', :version => '~> 2.3.2', :lib => 'will_paginate', :source => 'http://gems.github.com'
+ # config.gem 'will_paginate', :version => '~> 2.3.2', :lib => 'will_paginate', :source => 'http://gems.github.com'
+
+   config.gem 'will_paginate', :version => '~> 2.3.16'
+
+
 
   #config.gem "RedCloth", :version => '4.0.4'
   config.gem "RedCloth", :version => '4.1.1'

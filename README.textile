@@ -68,7 +68,7 @@ sudo gem update
 h2. Get the Will Paginate Plugin
 
 <pre>
-sudo gem install will_paginate
+gem install will_paginate --version "=2.3.11"
 </pre>
 
 h2. Download and install Active LDAP

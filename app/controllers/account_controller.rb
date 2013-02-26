@@ -25,7 +25,7 @@ class AccountController < ApplicationController
   #@person = Person.find(:first, :conditions => [ "login = ?", login])
   #self.current_person = @person
     #and toggle the comments on the next two lines
-  #if 1==2
+  if 1==2
     
     if Ldapuser.login(login,password)
       #login successful 
@@ -60,6 +60,14 @@ class AccountController < ApplicationController
     else
       flash[:notice] = "Your login credentails did not seem to match"
     end
+    
+  else
+    @person = Person.new(:login => login) 
+    self.current_person = @person
+    cookies[:auth_token] = { :value => self.current_person.remember_token , :expires => self.current_person.remember_token_expires_at }
+    
+  end
+    
     if logged_in?
       if params[:remember_me] == "1"
         self.current_person.remember_me

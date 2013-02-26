@@ -1,7 +1,7 @@
 class Equipment < ActiveRecord::Base
   
   
-  acts_as_taggable
+  #acts_as_taggable
   
   acts_as_fleximage do
     image_directory 'public/images/equipment'
@@ -18,7 +18,7 @@ class Equipment < ActiveRecord::Base
   
   #has_one :transfer_to, :through=> :active_transfer
 
-  acts_as_tree :order => "name"
+  #acts_as_tree :order => "name"
 
   def make_n_model
     "#{manufacturer}, #{model}"  
