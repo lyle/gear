@@ -10,3 +10,4 @@ public/images/equipment/*
 lib/active_ldap/*
 lib/active_ldap.rb
 vendor/gems/*
+vendor/*
